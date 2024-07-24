@@ -1,0 +1,87 @@
+@mixin flexcenter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+	header {
+		z-index: 10;
+		background-color: $background-color_1;
+		position: fixed;
+		top: 0;
+		transition: 0.3s;
+		width: 100vw;
+		#navbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		nav {
+			li {
+				list-style-type: none;
+				list-style: none;
+				font-size: clamp(1rem , 1vw , 10vw);
+				font-weight: 800;
+				a {
+					text-decoration: none;
+					transition: 0.3s;
+					&:hover {
+						color: $color_2;
+					}
+				}
+			}
+			.nav-left {
+				@include flexcenter();
+			picture{
+				cursor: pointer;
+				@include flexcenter();
+				width: 5rem;
+				img{
+					width: 100%;
+				}
+			}
+			}
+			.nav-right {
+				@include flexcenter();
+			}
+			ul {
+                @include flexcenter();
+				li {
+					padding: clamp(1px, 1.2vw , 1000px);
+				}
+			}
+	
+		}
+		.nav-right {
+			.but {
+				background-color: $background-color_3;
+				color: #3A7D5A;
+				cursor: pointer;
+				flex-wrap: wrap;
+				padding: clamp(0.5rem , 1vw , 1000px) clamp(1rem , 2vw , 1000px);
+				text-align: center;
+				text-decoration: none;
+				font-size: clamp(1rem, 1vw , 1000px);
+				border-radius: 3px;
+				border: 1px solid #3A7D5A;
+				font-weight: 800;
+				transition: 0.3s;
+				&:hover {
+					background-color: $background-color_4;
+					color: $color_3;
+				}
+			}
+		}.burger-menu {
+			width: clamp(1rem , 2vw, 1000px);
+			cursor: pointer;
+		}
+		.burger{
+			display: none;
+		}
+	}
+
+	.nav-left img{
+		width: 1vw;
+		margin-left: 5px;
+		padding-top:5px;
+	}

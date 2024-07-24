@@ -1,0 +1,82 @@
+.footer{
+    .sub-footer{
+        background-color: $background-color_12;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 8vw 2vw;
+        gap: 2vw;
+        > *{
+        }
+        .message{
+            h2{
+                color: white;
+                font-size: clamp(2rem,3vw,1000px);
+                margin-bottom: 1vw;
+                
+            }
+            p{
+                color: white;
+                font-size: clamp(1rem,1vw,1000px);
+
+            }
+        }
+        .action{
+            button{
+                font-size: 1em;
+                padding: 1.2rem 2.5rem;
+    background-color: rgb(45, 195, 2);
+    color: rgb(255, 255, 255);
+    min-width: 200px;
+    margin: 0px 0px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        background-color: $background-color_5;
+    }
+    
+            }
+            h6{
+                color: white;
+            }
+        }
+    }
+    .real-footer{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .info{
+           
+            font-size: clamp(5px,1vw,1000px);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 2vw;
+            width: 100vw;
+            background-color: $background-color_2;
+            .dagvikavshirdit{
+                font-size: clamp(1rem,2vw,1000px);
+            }
+            div{
+
+                font-size: clamp(7px,1vw,1000px);
+
+            }
+        }
+    }
+    .footer-bottom{
+        background-color: rgba(145, 153, 164, 0.219);
+        padding: 1vw;
+        .div-left{
+            
+        }
+        .div-right{
+
+        }
+    }
+}

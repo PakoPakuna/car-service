@@ -1,0 +1,42 @@
+@import './scss/variables';
+@import './scss/header.scss';
+@import './scss/section1';
+@import './scss/section2';
+@import './scss/section3';
+@import './scss/section4';
+@import './scss/section5';
+@import './scss/section6';
+@import './scss/section7';
+@import "./scss/media";
+@import "./scss/sub-footer";
+@import "./scss/section3-5";
+@import "./scss/fonts";
+@import "./scss/section3-4";
+
+
+
+html{
+
+	scroll-behavior: smooth;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: firago-bold;
+	color: $background-color_14;
+}
+body{
+	background-color: $background-color_1;
+}
+
+
+.sticky {
+	background-color:white;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px -3px;
+}
+section {
+	@include flexcenter();
+	outline: rgb(102, 184, 218);
+}
+

@@ -1,0 +1,54 @@
+.section3-5{
+    background-color: $background-color_69;
+    padding: 2rem 0 ;
+    .container-action{
+        .container-action-child{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            .actionn{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                width: clamp(10rem,10vw,1000px);
+                > *{
+                    align-items: center;
+                }
+                
+                .container-action-child-child{
+
+                    display: flex;
+                align-items: center;
+                justify-content: center;
+                aspect-ratio: 1/1;
+                justify-content: center;
+                border-radius: 50%;
+                cursor: pointer;
+                background-color: $background-color_12;
+                transition: 0.3s ease-in-out;
+                    object-fit: cover;
+                   
+                img{
+                    width: 100%;
+                }
+                &:hover{
+                    scale: 1.1;
+                    translate: 0 -1vw;
+                }
+            }
+            .container-action-child-child1{
+                font-size: clamp(0.5rem,0.7vw,1000px);
+                position: absolute;
+                top: 105%;
+                text-align: center;
+            }
+        }
+    }
+    }
+}

@@ -1,0 +1,106 @@
+
+@media (0px <= width <= 1200px) {
+	.menu-item {
+		display: none;
+	}
+
+	.nav-right .burger{
+		display:block;
+
+	}
+}
+@media (0px <= width <= 700px) {
+	.but {
+		display: none;
+	}
+	
+}
+
+@media (0px <= width <= 1200px) {
+.section3{
+	.usage-benefits-container{
+		.benefits{
+			.benefit{
+				width: 90%;
+			}
+		}
+	}
+}	
+}
+
+@media (0px <= width <= 1200px) {
+	.section4{
+		.solutions-container{
+			.solutions-div-container{
+				height: auto;
+				.solutions-div1{
+					width: 80vw;
+					.link{
+						.dropdown{
+							text-align: center;
+						}
+					}
+				}
+				flex-direction: column;
+				align-items: center;
+				.solutions-div2{
+
+					height: 50vw;
+				}
+			}
+		}
+	}	
+	}
+	
+
+
+
+
+
+@media (0px <= width <= 700px) {
+	.try-it-out-container {
+		
+		align-items: center;
+
+		.title{
+			text-align: center
+		}
+		;
+		}
+	}
+	
+	@media (0px <= width <= 700px) {
+	.section5{
+		.try-it-out-img{
+			display: none;
+		}
+	}
+		}
+
+		@media (0px <= width <= 700px) {
+			.section6{
+				.use-cases-container{
+					.use-cases-child1{
+						background-color: transparent;
+						
+					}
+					.use-cases-child2{
+						flex-direction: column;
+						align-items: center;
+
+					
+						.preview2{
+							text-align: center;
+						}
+					}
+				}
+			}
+				}
+
+				.footer{
+					.sub-footer{
+					text-align: center;
+					}
+				}
+
+			

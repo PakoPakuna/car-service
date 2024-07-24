@@ -1,0 +1,71 @@
+@mixin flexcenter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.section3 {
+    padding: clamp(1.5rem,2vw,1000px);
+    width: 100%;
+    background-color: $background-color_12;
+    .usage-benefits-container{
+        @include flexcenter();
+        flex-direction: column;
+        h2{
+            font-size: clamp(2rem,2.5vw,1000px);
+            color: white;
+            text-align: center
+        }
+        .benefits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+           > *{
+            animation: fade-in linear;
+            animation-timeline: view();
+            animation-range-end:400px;
+
+                padding:4vw;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                flex-basis: 30ch;
+                background-color: $background-color_13;
+                margin: 2vw;
+                border-radius: clamp(1rem,1vw,1000px);
+                text-align: center;
+                @include flexcenter();
+                img{
+                      width: clamp(1rem,4vw,1000px);
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                }
+                h1{
+                color: white;
+                font-size: clamp(4rem,7vw,1000px);
+                    
+                }
+                h3{
+                color: #C3D1D9;
+                    font-size:clamp(1rem,2vw,1000px);
+                
+                }
+            }
+
+        }
+    }
+    }
+
+    @keyframes fade-in {
+        from{scale: .8;opacity: 0;}
+        to{
+            scale: 1;
+            opacity: 1;
+        }
+    }

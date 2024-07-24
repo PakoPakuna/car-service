@@ -1,0 +1,43 @@
+@mixin flexcenter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.section2 {
+    background: linear-gradient(white, white  calc(100% - 100px), rgb(255, 255, 255) calc(100% - 100px), $background-color_1);
+
+	flex-direction: column;
+    padding: 3vw;
+    .top-clients-container {
+        @include flexcenter();
+        flex-direction: column;
+        .logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            picture{
+                display: flex;
+                width: clamp(3.5rem, 10vw, 1000px);
+                .hp , .acer{
+                    scale: 0.5;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .message-div {
+          width: clamp(5rem, 80vw , 1000px);
+         .message {
+            text-align: center;
+            color: $color_5;
+    }
+}
+}
+
+}

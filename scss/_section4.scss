@@ -1,0 +1,422 @@
+@mixin flexcenter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+.section4 {
+    #first{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown1{
+                               border-bottom: 1px solid;
+
+                            }
+                            .dropsvg1{
+                                rotate: 180deg;
+                            }
+                            .submenu-items1{
+                                padding: 1.5rem;
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/solutionPrepare.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }
+    #second{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    
+                    .solutions-div1{
+                        
+                        .solutions-div-container{
+                            .dropdown2{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg2{
+                                rotate: 180deg;
+                            }
+                            .submenu-items2{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/trackAndManage.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }   #third{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown3{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg3{
+                                rotate: 180deg;
+                            }
+                            .submenu-items3{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/storeInOnePlace.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }   #fourth{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown4{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg4{
+                                rotate: 180deg;
+                            }
+                            .submenu-items4{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/useAnySignatureType.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }   #fifth{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown5{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg5{
+                                rotate: 180deg;
+                            }
+                            .submenu-items5{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/integrateInYourApps.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }
+
+    #sixth{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown6{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg6{
+                                rotate: 180deg;
+                            }
+                            .submenu-items6{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/integrateInYourApps.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }
+    #seventh{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown7{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg7{
+                                rotate: 180deg;
+                            }
+                            .submenu-items7{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/integrateInYourApps.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }
+    #eighth{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown8{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg8{
+                                rotate: 180deg;
+                            }
+                            .submenu-items8{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/integrateInYourApps.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }
+    #nineth{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown9{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg9{
+                                rotate: 180deg;
+                            }
+                            .submenu-items9{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/integrateInYourApps.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }
+    #tenth{
+        display: none;
+        &:checked{
+           ~ .solutions-container{
+                .solutions-div-container{
+                    .solutions-div1{
+                        .solutions-div-container{
+                            .dropdown10{
+                                border-bottom: 1px solid;
+ 
+                             }
+                            .dropsvg10{
+                                rotate: 180deg;
+                            }
+                            .submenu-items10{
+                                opacity: 1;
+                                max-height: 1000px;
+                                transition: 0.3s;
+                                padding: 1.5rem;
+                            }
+                        }
+                    }
+                    .solutions-div2{
+                        background-image:url(./picures/integrateInYourApps.webp);
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                    }
+                }
+            }
+        }
+    }
+    
+    .solutions-container{
+        padding: 3vw;
+        display: flex;
+        flex-direction: column;
+        .solutions-text{
+            margin: 3rem;
+            h1{
+                text-align: center;
+                font-size: clamp(2rem,2vw,1000px);
+            }
+        }
+        .solutions-div-container{
+            display: flex;
+            height: auto;
+            gap: 2rem;
+            height: 65vw;
+            >*{
+                flex: 1;
+                max-width: 80rem;
+            }
+            .solutions-div1{
+                @include flexcenter();
+
+                .solutions-div-container{
+                    .accordion-menu{
+                        .link {
+                            list-style: none;
+                            flex-direction: column;
+                            .dropdown{
+                                padding: 10px;
+                                border: 3px;
+                                display: flex;
+                                cursor: pointer;
+                                align-items: center;
+                                width: 100%;
+                               font-size: clamp(11px, 0.75vw, 1000px);    
+                               gap: 1rem;     
+
+                              .dropsvg{
+                                margin-left: auto;
+                                transition: 0.3s;
+
+
+                            }
+                            .dge{
+
+                                width: 100%;
+                            }
+
+                              .itemsvg{
+                                aspect-ratio: 1/1;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: $background-color_12;
+                                border-radius: 50%;
+                                width: clamp(3rem,3vw,1000px);
+                                img{
+                                    width: 100%;
+                                }
+                              }
+                            }
+                       
+                            .submenu-items{
+                                
+                                width: 100%;
+                                opacity: 0;
+                                max-height: 0;
+                                display: grid;
+                                transition: 0.3s;                             
+                                gap: 10px;
+                                li{
+                                    flex: 1;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }                   
+                    }
+        
+                }
+            }
+            .solutions-div2{
+        @include flexcenter();
+                scale: 0.8;
+            }
+        }
+    }
+}
+

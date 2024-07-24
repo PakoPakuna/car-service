@@ -1,0 +1,76 @@
+@mixin flexcenter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.section5 {
+    >*{
+        flex: 1;
+    }
+    background-color: $background-color_2;
+    .try-it-out-container{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+        .title{
+            h5{
+                font-size: clamp(1.5rem,2vw,1000px);
+                color: $background-color_4;
+            }
+            h4{
+                font-size: clamp(1.5rem,2vw,1000px);
+            }
+        }
+        .email{
+            width: 20rem;
+            cursor: text;
+            display: flex;
+            color: rgba(0, 0, 0, 0.88);
+            line-height: 1.5;
+            background-color: #ffffff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #C3D1E5;
+            border-radius: 3px;
+            transition: all 0.2s;
+            min-height: 3rem;
+            img{
+               margin-right: 5px;
+               margin-left: 10px;
+            }
+            input{
+                margin-right: auto;
+                outline: none;
+                font-size: clamp(1rem,1vw,1000px);
+                border: none;
+
+            }
+            button{
+                cursor: pointer;
+                padding: 1vw;
+                border: none;
+                background-color:$background-color_4;
+                transition: 0.3s;
+                color: #ffffff;
+                &:hover{
+                    background-color: $background-color_5;
+                }
+            
+            }
+            
+        }
+    }
+    .try-it-out-img{    
+
+
+        img{
+            width: 100%;
+            scale: 0.75;
+        }
+    }
+}

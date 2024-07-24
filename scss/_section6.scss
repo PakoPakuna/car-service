@@ -1,0 +1,206 @@
+@mixin flexcenter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.section6{
+    
+    .use-cases-container{
+            #one{
+                display: none;
+                &:checked{
+                    ~ .cases-container{
+                        .use-cases-child1{
+                            .one{
+                                background-color: $background-color_13;
+                                color: white;
+                            }
+                        }
+                        .use-cases-child2{
+                           .preview{
+                            height: clamp(12rem,15vw,1000px);
+                            background-image: url(./picures/Fincane_Hero_2_X_d5ff0be724.webp);
+                            background-repeat:no-repeat;
+                            background-size:contain;
+                            background-position:center;
+                           }
+                      
+                        }
+                    }
+                }
+            }
+            #two{
+                display: none;
+                &:checked{
+                    ~ .cases-container{
+                        .use-cases-child1{
+                            .two{
+                                background-color: $background-color_13;
+
+                                color: white;
+                            }
+                        }
+                        .use-cases-child2{
+                          .preview{
+                            height: clamp(12rem,15vw,1000px);
+                         background-image: url(./picures/Procurment_Hero_6ed8057d6e.webp);
+                         background-repeat:no-repeat;
+                         background-size:contain;
+                         background-position:center;
+                          }
+                      
+                        }
+                    }
+                }
+            }
+            #three{
+                display: none;
+                &:checked{
+                    ~ .cases-container{
+                        .use-cases-child1{
+                            .three{
+                                background-color: $background-color_13;
+                                color: white;
+                            }
+                        }
+                        .use-cases-child2{
+                          .preview{
+                            height: clamp(12rem,15vw,1000px);
+                         background-image: url(./picures/HR_HERO_2_X_7e8511183a.webp);
+                         background-repeat:no-repeat;
+                         background-size:contain;
+                         background-position:center;
+                          }
+                      
+                        }
+                    }
+                }
+            }
+            #four{
+                display: none;
+                &:checked{
+                    ~ .cases-container{
+                        .use-cases-child1{
+                            .four{
+                                background-color: $background-color_13;
+                                color: white;
+                            }
+                        }
+                        .use-cases-child2{
+                          .preview{
+                            height: clamp(12rem,15vw,1000px);
+                            background-image: url(./picures/Sales_Hero_0bbe97fef4.webp);
+                            background-repeat:no-repeat;
+                            background-size:contain;
+                            background-position:center;
+                             
+                          }
+                      
+                        }
+                    }
+                }
+            }
+            #five{
+                display: none;
+                &:checked{
+                    ~ .cases-container{
+                        .use-cases-child1{
+                            .five{
+                                background-color: $background-color_13;
+                                color: white;
+                            }
+                        }
+                        .use-cases-child2{
+                          .preview{
+                            height: clamp(12rem,15vw,1000px);
+                         background-image: url(./picures/Front_Office_Hero_b34610ce4b.webp);
+                         background-repeat:no-repeat;
+                         background-size:contain;
+                         background-position:center;
+                          }
+                      
+                        }
+                    }
+                }
+            }
+        
+        width: 80vw;
+        @include flexcenter();
+        flex-direction: column;
+        h2{
+            text-align: center;
+            font-size: clamp(1.5rem,3vw,1000px);
+            margin: 2vw;
+        }
+        
+        .use-cases-child1{
+            margin-bottom: 2vw;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1vw;
+            > *{
+                 padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                flex-basis: 10vw;
+                flex-grow: 0;
+                min-width: fit-content;
+                border-radius: 3px;
+                font-size: clamp(12px , 1vw ,1000px);
+                background-color: white;
+                transition: 0.3s;
+                cursor: pointer;
+                &:hover{
+                    background-color: $background-color_13;
+                    color: white;
+                }
+                
+            }
+        }
+        .cases-container{
+            background-color: $background-color_2;
+            border-radius: 3px;
+            padding: 2vw 0 2vw 0; 
+            width: 100%;
+        .use-cases-child2{
+            display: flex;
+            flex-wrap: wrap;
+            .preview{
+                width: 50%;
+                @include flexcenter();
+                img{
+                    width: clamp(12rem,50%,1000px);
+                     height: auto;
+                }
+            }
+            .preview2{
+                display: flex;
+                flex-direction: column;
+                margin-top: 1.5vw;
+                gap: clamp(2vw,1vw,1000px);
+                width: 50%;
+                
+                h4{
+                    font-size: clamp(1rem,1.5vw,1000px);
+                }
+                p{
+                    font-size: clamp(0.8rem,1vw,1000px);
+                }
+                a{
+                    font-size: clamp(0.8rem,1vw,1000px);
+                }
+            }
+        
+        }
+        
+    }
+}
+}
