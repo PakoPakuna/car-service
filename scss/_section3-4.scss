@@ -2,6 +2,9 @@
     gap: 2rem;
     padding: 2vw 12vw 2vw 12vw;
     flex-wrap: wrap;
+    img{
+        visibility: hidden; //temp
+    }
     >*{
         flex: 1;
         min-width: 20rem;

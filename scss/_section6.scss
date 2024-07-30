@@ -21,8 +21,9 @@
                         }
                         .use-cases-child2{
                            .preview{
+                            border-radius: 5px;
+                            background-image: url(./Avto_Servisis_Avtomatizaciis_Sistema/28.png);
                             height: clamp(12rem,15vw,1000px);
-                            background-image: url(./picures/Fincane_Hero_2_X_d5ff0be724.webp);
                             background-repeat:no-repeat;
                             background-size:contain;
                             background-position:center;
@@ -46,7 +47,7 @@
                         .use-cases-child2{
                           .preview{
                             height: clamp(12rem,15vw,1000px);
-                         background-image: url(./picures/Procurment_Hero_6ed8057d6e.webp);
+                         background-image: url(./Avto_Servisis_Avtomatizaciis_Sistema/career.jpg);
                          background-repeat:no-repeat;
                          background-size:contain;
                          background-position:center;
@@ -69,7 +70,7 @@
                         .use-cases-child2{
                           .preview{
                             height: clamp(12rem,15vw,1000px);
-                         background-image: url(./picures/HR_HERO_2_X_7e8511183a.webp);
+                         background-image: url(./Avto_Servisis_Avtomatizaciis_Sistema/ბანერი.jpg);
                          background-repeat:no-repeat;
                          background-size:contain;
                          background-position:center;
@@ -79,54 +80,6 @@
                     }
                 }
             }
-            #four{
-                display: none;
-                &:checked{
-                    ~ .cases-container{
-                        .use-cases-child1{
-                            .four{
-                                background-color: $background-color_13;
-                                color: white;
-                            }
-                        }
-                        .use-cases-child2{
-                          .preview{
-                            height: clamp(12rem,15vw,1000px);
-                            background-image: url(./picures/Sales_Hero_0bbe97fef4.webp);
-                            background-repeat:no-repeat;
-                            background-size:contain;
-                            background-position:center;
-                             
-                          }
-                      
-                        }
-                    }
-                }
-            }
-            #five{
-                display: none;
-                &:checked{
-                    ~ .cases-container{
-                        .use-cases-child1{
-                            .five{
-                                background-color: $background-color_13;
-                                color: white;
-                            }
-                        }
-                        .use-cases-child2{
-                          .preview{
-                            height: clamp(12rem,15vw,1000px);
-                         background-image: url(./picures/Front_Office_Hero_b34610ce4b.webp);
-                         background-repeat:no-repeat;
-                         background-size:contain;
-                         background-position:center;
-                          }
-                      
-                        }
-                    }
-                }
-            }
-        
         width: 80vw;
         @include flexcenter();
         flex-direction: column;
@@ -168,7 +121,7 @@
         .cases-container{
             background-color: $background-color_2;
             border-radius: 3px;
-            padding: 2vw 0 2vw 0; 
+            padding: 2vw; 
             width: 100%;
         .use-cases-child2{
             display: flex;

@@ -1,7 +1,14 @@
 .section3-5{
     background-color: $background-color_69;
-    padding: 2rem 0 ;
+    padding: 3rem 0 ;
     .container-action{
+        .action-h1{
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
         .container-action-child{
             padding: 2rem;
             display: flex;

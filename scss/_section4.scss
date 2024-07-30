@@ -24,10 +24,11 @@
                                 rotate: 180deg;
                             }
                             .submenu-items1{
-                                padding: 1.5rem;
-                                opacity: 1;
+                                visibility: visible;
                                 max-height: 1000px;
+                                opacity: 1;
                                 transition: 0.3s;
+                                height: auto;
                             }
                         }
                     }
@@ -58,10 +59,11 @@
                                 rotate: 180deg;
                             }
                             .submenu-items2{
-                                opacity: 1;
+                                visibility: visible;
                                 max-height: 1000px;
+                                opacity: 1;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
 
                             }
                         }
@@ -90,10 +92,11 @@
                                 rotate: 180deg;
                             }
                             .submenu-items3{
-                                opacity: 1;
+                                visibility: visible;
                                 max-height: 1000px;
+                                opacity: 1;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
                             }
                         }
                     }
@@ -121,10 +124,11 @@
                                 rotate: 180deg;
                             }
                             .submenu-items4{
-                                opacity: 1;
+                                visibility: visible;
                                 max-height: 1000px;
+                                opacity: 1;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
                             }
                         }
                     }
@@ -152,10 +156,11 @@
                                 rotate: 180deg;
                             }
                             .submenu-items5{
+                                visibility: visible;
                                 opacity: 1;
-                                max-height: 1000px;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
+                                max-height: 1000px;
                             }
                         }
                     }
@@ -185,10 +190,11 @@
                                 rotate: 180deg;
                             }
                             .submenu-items6{
+                                visibility: visible;
                                 opacity: 1;
-                                max-height: 1000px;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
+                                max-height: 1000px;
                             }
                         }
                     }
@@ -217,10 +223,11 @@
                                 rotate: 180deg;
                             }
                             .submenu-items7{
+                                visibility: visible;
                                 opacity: 1;
-                                max-height: 1000px;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
+                                max-height: 1000px;
                             }
                         }
                     }
@@ -250,9 +257,10 @@
                             }
                             .submenu-items8{
                                 opacity: 1;
-                                max-height: 1000px;
+                                visibility: visible;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
+                                max-height: 1000px;
                             }
                         }
                     }
@@ -281,10 +289,11 @@
                                 rotate: 180deg;
                             }
                             .submenu-items9{
+                                visibility: visible;
                                 opacity: 1;
-                                max-height: 1000px;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
+                                max-height: 1000px;
                             }
                         }
                     }
@@ -314,9 +323,10 @@
                             }
                             .submenu-items10{
                                 opacity: 1;
-                                max-height: 1000px;
+                                visibility: visible;
+                                height: auto;
                                 transition: 0.3s;
-                                padding: 1.5rem;
+                                max-height: 1000px;
                             }
                         }
                     }
@@ -345,17 +355,19 @@
         .solutions-div-container{
             display: flex;
             height: auto;
+            
             gap: 2rem;
-            height: 65vw;
+            height: 55vw;
             >*{
                 flex: 1;
                 max-width: 80rem;
             }
             .solutions-div1{
-                @include flexcenter();
-
                 .solutions-div-container{
                     .accordion-menu{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         .link {
                             list-style: none;
                             flex-direction: column;
@@ -390,17 +402,18 @@
                                 width: clamp(3rem,3vw,1000px);
                                 img{
                                     width: 100%;
+                                    scale: 0.65;
                                 }
                               }
                             }
                        
                             .submenu-items{
-                                
+                                padding-left: 1.5rem;
+                                transition: 0.2s;
                                 width: 100%;
                                 opacity: 0;
                                 max-height: 0;
-                                display: grid;
-                                transition: 0.3s;                             
+                                visibility: hidden;
                                 gap: 10px;
                                 li{
                                     flex: 1;
