@@ -8,14 +8,14 @@
 
 
 
-.section4 {
+.section-functionals {
     #first{
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown1{
                                border-bottom: 1px solid;
 
@@ -33,7 +33,7 @@
                         }
                     }
                     .solutions-div2{
-                        background-image:url(./picures/solutionPrepare.webp);
+                        background-image:url(./picures/9886531.jpg);
                         background-repeat:no-repeat;
                         background-size:contain;
                         background-position:center;
@@ -46,11 +46,11 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     
                     .solutions-div1{
                         
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown2{
                                 border-bottom: 1px solid;
  
@@ -69,7 +69,7 @@
                         }
                     }
                     .solutions-div2{
-                        background-image:url(./picures/trackAndManage.webp);
+                        background-image:url(./picures/3226080_43025.svg);
                         background-repeat:no-repeat;
                         background-size:contain;
                         background-position:center;
@@ -81,9 +81,9 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown3{
                                 border-bottom: 1px solid;
  
@@ -101,7 +101,7 @@
                         }
                     }
                     .solutions-div2{
-                        background-image:url(./picures/storeInOnePlace.webp);
+                        background-image:url(./picures/11667633_20945487.svg);
                         background-repeat:no-repeat;
                         background-size:contain;
                         background-position:center;
@@ -113,9 +113,9 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown4{
                                 border-bottom: 1px solid;
  
@@ -145,9 +145,9 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown5{
                                 border-bottom: 1px solid;
  
@@ -179,9 +179,9 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown6{
                                 border-bottom: 1px solid;
  
@@ -212,9 +212,9 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown7{
                                 border-bottom: 1px solid;
  
@@ -245,9 +245,9 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown8{
                                 border-bottom: 1px solid;
  
@@ -278,9 +278,9 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown9{
                                 border-bottom: 1px solid;
  
@@ -311,9 +311,9 @@
         display: none;
         &:checked{
            ~ .solutions-container{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .solutions-div1{
-                        .solutions-div-container{
+                        .solutions-container__wrapper{
                             .dropdown10{
                                 border-bottom: 1px solid;
  
@@ -342,17 +342,18 @@
     }
     
     .solutions-container{
+        background-color: white;
         padding: 3vw;
         display: flex;
         flex-direction: column;
-        .solutions-text{
+        .solutions-container__solutions-text{
             margin: 3rem;
             h1{
                 text-align: center;
                 font-size: clamp(2rem,2vw,1000px);
             }
         }
-        .solutions-div-container{
+        .solutions-container__wrapper{
             display: flex;
             height: auto;
             
@@ -363,24 +364,21 @@
                 max-width: 80rem;
             }
             .solutions-div1{
-                .solutions-div-container{
+                .solutions-container__wrapper{
                     .accordion-menu{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
                         .link {
                             list-style: none;
                             flex-direction: column;
                             .dropdown{
+                                background-color: rgb(247, 247, 247);
                                 padding: 10px;
                                 border: 3px;
                                 display: flex;
                                 cursor: pointer;
                                 align-items: center;
                                 width: 100%;
-                               font-size: clamp(11px, 0.75vw, 1000px);    
+                               font-size: clamp(10px, 0.5vw, 1000px);    
                                gap: 1rem;     
-
                               .dropsvg{
                                 margin-left: auto;
                                 transition: 0.3s;
@@ -417,7 +415,7 @@
                                 gap: 10px;
                                 li{
                                     flex: 1;
-                                    font-size: 1rem;
+                                    font-size: 14px;
                                 }
                             }
                         }                   

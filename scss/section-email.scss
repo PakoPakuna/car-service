@@ -1,13 +1,4 @@
-@mixin flexcenter{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-
-.section5 {
+.section-email {
     >*{
         flex: 1;
     }
@@ -17,7 +8,7 @@
         display: flex;
         flex-direction: column;
         padding: 5vw;
-        .title{
+        .try-it-out-container__title{
             h5{
                 font-size: clamp(1.5rem,2vw,1000px);
                 color: $background-color_4;
@@ -26,7 +17,7 @@
                 font-size: clamp(1.5rem,2vw,1000px);
             }
         }
-        .email{
+        .try-it-out-container__email{
             width: 20rem;
             cursor: text;
             display: flex;
@@ -66,11 +57,10 @@
         }
     }
     .try-it-out-img{    
-
-
+        scale: 0.75;
+        
         img{
             width: 100%;
-            scale: 0.75;
         }
     }
 }

@@ -1,10 +1,10 @@
 
 @media (0px <= width <= 1200px) {
-	.menu-item {
+	.navbar--left__li {
 		display: none;
 	}
 
-	.nav-right .burger{
+	.navbar--right .burger-menu{
 		display:block;
 
 	}
@@ -17,7 +17,7 @@
 }
 
 @media (0px <= width <= 1200px) {
-.section3{
+.section-email{
 	.usage-benefits-container{
 		.benefits{
 			.benefit{
@@ -29,9 +29,9 @@
 }
 
 @media (0px <= width <= 1200px) {
-	.section4{
+	.section-functionals{
 		.solutions-container{
-			.solutions-div-container{
+			.solutions-container__wrapper{
 				height: auto;
 				.solutions-div1{
 					width: 80vw;
@@ -62,7 +62,7 @@
 		
 		align-items: center;
 
-		.title{
+		.try-it-out-container__title{
 			text-align: center
 		}
 		;
@@ -70,26 +70,30 @@
 	}
 	
 	@media (0px <= width <= 700px) {
-	.section5{
+		.section-email{
 		.try-it-out-img{
 			display: none;
 		}
-	}
+}
 		}
 
 		@media (0px <= width <= 700px) {
-			.section6{
+			.section-about{
 				.use-cases-container{
-					.use-cases-child1{
+					.cases-label{
 						background-color: transparent;
 						
 					}
-					.use-cases-child2{
+					.use-case-content{
 						flex-direction: column;
 						align-items: center;
+						.preview-more{
+							margin-right: auto;
+							justify-content: center;
+						}
 
 					
-						.preview2{
+						.preview__text--first{
 							text-align: center;
 						}
 					}
@@ -103,4 +107,11 @@
 					}
 				}
 
-			
+				@media screen and (max-width: 700px){
+					.box{
+					  width: 70%;
+					}
+					.email-popup{
+					  width: 70%;
+					}
+				  }

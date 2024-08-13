@@ -7,10 +7,14 @@
 }
 
 
-.section3 {
+.section-benefits {
     padding: clamp(1.5rem,2vw,1000px);
     width: 100%;
-    background-color: $background-color_12;
+    background-image: url("./Avto_Servisis_Avtomatizaciis_Sistema/Untitled design.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .usage-benefits-container{
         @include flexcenter();
         flex-direction: column;
@@ -25,6 +29,7 @@
     justify-content: center;
     flex-wrap: wrap;    
            > *{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
             animation: fade-in linear;
             animation-timeline: view();
             animation-range-end:400px;
@@ -35,7 +40,7 @@
                 flex-direction: column;
                 flex: 1;
                 flex-basis: 30ch;
-                background-color: $background-color_13;
+                background-color: #3a7d5ab7; 
                 margin: 2vw;
                 border-radius: clamp(1rem,1vw,1000px);
                 text-align: center;
@@ -54,13 +59,16 @@
                 h3{
                 color: #C3D1D9;
                     font-size:clamp(1rem,2vw,1000px);
-                
+                    height: 3rem;
+                    display: flex;
+                    align-items: center;
                 }
             }
 
         }
     }
     }
+
 
     @keyframes fade-in {
         from{scale: .8;opacity: 0;}

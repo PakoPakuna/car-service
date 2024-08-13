@@ -7,31 +7,35 @@
 }
 
 
-.section2 {
+.section-partners {
     background: linear-gradient(white, white  calc(100% - 100px), rgb(255, 255, 255) calc(100% - 100px), $background-color_1);
-
 	flex-direction: column;
     padding: 3vw;
     .top-clients-container {
         @include flexcenter();
+        gap: 1rem;
         flex-direction: column;
-        .logos {
+        .top-clients-container__logos {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 1rem;
+            flex-wrap: wrap;
+
             picture{
                 display: flex;
-                width: clamp(3.5rem, 10vw, 1000px);
-                .hp , .acer{
-                    scale: 0.5;
-                }
+                align-items: center;
+                justify-content: center;
+                width: 20rem;
+                background-color:#fdfbfc;
+                border:solid  1px #756C66 ;
+                border-radius: 3px;
                 img{
                     width: 100%;
                 }
             }
         }
-        .message-div {
+        .top-clients-container__message {
           width: clamp(5rem, 80vw , 1000px);
          .message {
             text-align: center;

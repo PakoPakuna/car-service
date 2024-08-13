@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview__image": "vite preview__image"
   },
   "devDependencies": {
     "gulp": "^5.0.0",

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ავტო სერვისის ავტომატიზაციის სისტემა</title>
+    <try-it-out-container__title>ავტო სერვისის ავტომატიზაციის სისტემა</try-it-out-container__title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -16,800 +16,612 @@
   <body>
     <header id="header">
       <nav id="navbar">
-        <div class="nav-left">
-          <ul class="ul1">
-            <picture><img src="./picures/ugtLogo-Photoroom (1).png" alt=""></picture>
-            <li class="turi menu-item"><a href="#">ტური</a></li>
-            <li class="gamokenebebi menu-item"><a href="#">გამოყენებები</a>
-              <img src="svgs/dropdown.svg" alt="">
-            </li>
-            <li class="resursebi menu-item"><a href="#">რესურსები</a>
-              <img src="svgs/dropdown.svg" alt="">
-            </li>
-            <li class="fasi menu-item"><a href="#">ფასი</a></li>
-          </ul>
-        </div>
-        <div class="nav-right">
-         <ul class="ul2">
-          <li class="translate menu-item"><a href="#">Geo</a></li>
-          <li class="shesvla"><a href="#">შესვლა</a></li>
-          <li class="scade ufasod"><a href="#"><button class="but">სცადე უფასოდ</button></a></li>
-          <li class="burger"><img class="burger-menu" src="ragac.svg" alt=""></li>
-        </ul>
-  </div>
+          <div class="navbar--left">
+              <picture>
+                  <img src="./picures/ugtLogo-Photoroom(1).png" alt="">
+              </picture>
+              <li class="navbar--left__li" ><a data-translate="navbar_offer" href="#section-offer">რას გთავაზობთ</a></li>
+              <li class="navbar--left__li" ><a data-translate="navbar_functionality" href="#section-functionals">ფუნქციონალი</a>
+                  <!-- <img src="svgs/dropdown.svg" alt=""> -->
+              </li>
+              <li class="resursebi navbar--left__li" ><a data-translate="navbar_about" href="#section-about">ჩვენ</a>
+                  <!-- <img src="svgs/dropdown.svg" alt=""> -->
+              </li>
+          </div>
+          <div class="navbar--right">
+            <a class="navbar--left__li" target="_blank" href="https://www.facebook.com/UGTtechnology"><img src="/svgs/logopngs/png-03.png" class=""></a>
+            <a class="navbar--left__li" target="_blank" href="https://www.linkedin.com/company/ugt/"><img src="/svgs/logopngs/png-02.png" class=""></a>
+            <a class="navbar--left__li" target="_blank" href="https://www.youtube.com/@ugtchannel4706"><img src="/svgs/logopngs/png-01.png" class=""></a>
+            <select id="languageSwitcher">
+                
+              <option value="ge" selected>Geo <img src="./svgs/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.svg" alt=""></option>
+              <option value="en">Eng</option>
+              
+          </select>
+          
+          <!-- <img src="./svgs/a5705a70-f0c6-4a77-b9c4-d9f66892ac52.svg" alt=""> -->
+              <a class="button" href="#email-popup1" data-translate="contact_us">
+                  <img src="./svgs/mail.svg" alt=""> დაგვიკავშირდით</a>
+              <div id="email-popup1" class="email-info-overlay">
+                  <div class="email-popup">
+                      <a class="email-close" href="#">&times;</a>
+                      <div class="email-content">
+                          <form id="contact-form">
+                              <div class="contact-form__container">
+                                  <div class="form-name">
+                                      <div><input type="text" name="name" placeholder="სახელი *" data-translate="form_name_placeholder"></div>
+                                  </div>
+                                  <div class="form-surname">
+                                      <div><input type="text" name="surname" placeholder="გვარი *" data-translate="form_surname_placeholder"></div>
+                                  </div>
+                                  <div class="form-position">
+                                      <div><input type="text" name="position" placeholder="თქვენი პოზიცია" data-translate="form_position_placeholder"></div>
+                                  </div>
+                                  <div class="form-company">
+                                      <div><input type="text" name="company" placeholder="ორგანიზაცია *" data-translate="form_company_placeholder"></div>
+                                  </div>
+                                  <div class="form-email">
+                                      <div><input type="text" name="email" placeholder="ელ.ფოსტა *" data-translate="form_email_placeholder"></div>
+                                  </div>
+                                  <div class="form-number">
+                                      <div><input type="text" name="number" placeholder="საკონტაქტო ნომერი *" data-translate="form_number_placeholder"></div>
+                                  </div>
+                                  <div class="form-text">
+                                      <div><textarea name="text" cols="30" rows="5" placeholder="თქვენი შეტყობინება *" data-translate="form_text_placeholder"></textarea></div>
+                                  </div>
+                                  <div><button type="submit" data-translate="form_submit_button">გაგზავნა</button></div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <div class="nav-container" tabindex="0">
+                  <label for="burger" class="nav-toggle"><img class="burger-menu" src="ragac.svg" alt=""></label>
+                  <input type="checkbox" name="burger" id="burger">
+                  <nav class="nav-items">
+                      <li class="nav-item" ><a  data-translate="navbar_offer" href="#section-offer">რას გთავაზობთ</a></li>
+                      <li class="nav-item"><a  data-translate="navbar_functionality" href="#section-functionals">ფუნქციონალი</a>
+                      </li>
+                      <li class="resursebi nav-item"><a  data-translate="navbar_about" href="#section-about">ჩვენ</a>
+                      </li>
+                  </nav>
+              </div>
+          </div>
       </nav>
-    </header>
-    <main class="main">
-      <section class="section1">
-        <div class="hello-container stars">
-
-          <div class="hello-container-element1"><h1>ავტო სერვისის ავტომატიზაციის სისტემა</h1></div>
-          <div class="hello-container-element2"><h2>სერვისის პროცესის სრული გაციფრულება</h2></div>
-          <div class="hello-container-element3">
-            <button class="but1">სცადე უფასოდ</button>
-            <button class="but2">მოითხოვე დემო</button>
-          </div>
-          <div class="hello-container-element4">
-            <h2>ბარათის მითითების გარეშე</h2>
-          </div>
+  </header>
+  
+    <main>
+      <section id="section-home" class="section-home">
+        
+        <div class="hello-container">
+            <h1 data-translate="auto_service_automation_system">ავტომატიზირებული ავტო სერვისის სისტემა</h1>
+            <h2 data-translate="full_digital_service_process">სერვისის პროცესის სრული გაციფრულება</h2>
+            <div class="hello-container__button-container">
+                <a data-translate="contact_us" class="button" href="#email-popup1">
+                    <img src="./svgs/mail.svg" alt=""> <span data-translate="contact_us_text">დაგვიკავშირდით</span>
+                </a>
+            </div>
         </div>
         <div class="hello-video">
-          <video src="video/vecteezy_automotive-mechanic-repairman-handshake-with-client-in_28697239 (1).mp4" poster="" autoplay="" loop="" muted="" playsinline="" disablepictureinpicture="" equalizer-state="attached" class=""></video>
+            <video src="video/vecteezy_automotive-mechanic-repairman-handshake-with-client-in_28697239 (1).mp4" poster="" autoplay="" loop="" muted="" playsinline="" disablepictureinpicture="" equalizer-state="attached" class=""></video>
         </div>
-      </section>
-      <section class="section2">
-        <div class="top-clients-container">
-          <div class="logos">
-            <picture>
-            <img src="./svgs/logopngs/microsoft-logo-svgrepo-com.svg" alt="">
-          </picture>
-          <picture>
-            <img src="./svgs/logopngs/Dell_Technologies_logo.svg" alt="">
-          </picture>
-          <picture>
-          <img class="acer" src="./svgs/logopngs/Acer_2011.svg" alt="">
-        </picture>
-        <picture>
-            <img class="hp" src="./svgs/logopngs/HP_logo_2008.svg" alt="">
-          </picture>
-           <picture>  <img src="./svgs/logopngs/Hewlett_Packard_Enterprise_logo.svg" alt="">
-           </picture>
+    </section>
+    
+    <section id="section-partners" class="section-partners">
+      <div class="top-clients-container">
+          <div class="top-clients-container__logos">
+              <picture>
+                  <img src="./svgs/1. bog.svg" alt="">
+              </picture>
+                  <picture>
+                  <img class="hp" src="./svgs/8. ემისი.svg" alt="">
+              </picture>
+              <picture>
+                  <img src="./svgs/6. განათლების და მეცნიერების სამინისტრო (1).svg" alt="">
+              </picture>
+              <picture>
+                  <img class="acer" src="./svgs/9. PSDA.svg" alt="">
+              </picture>
+          
+     
           </div>
-          <div class="message-div"><p class="message">70-ზე მეტი საერთაშორისო პარტნიორი</p>        
+          <div class="top-clients-container__message">
+              <p data-translate="more_than_70_international_partners" class="message">70-ზე მეტი საერთაშორისო პარტნიორი</p>
           </div>
-          </div>
-      </section>
-      <section class="section3">
-        <div class="usage-benefits-container">
-          <h2>UGT - გუნდის შესახებ</h2>
-          <div class="benefits">
-            <div class="benefit1 benefit">
-              <img src="svgs/calendar.svg" alt="">
-              <h1>26</h1>
-              <h3>წელი ტექნოლოგიაში</h1>
-            </div>
-            <div class="benefit2 benefit">
-              <img src="svgs/stock.svg" alt="">
-              <h1>14877</h1>
-              <h3>განხორციელებული პროექტი</h1>
-            </div>
-            <div class="benefit3 benefit">
-              <img src="svgs/rocket.svg" alt="">
-              <h1>73</h1>
-              <h3>პარტნიორი ორგანიზაცია</h1>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section3-4">
-        <div class="paragraph">
-          <div class="p-header"><h1>რას გთავაზობთ</h1></div>
-          <div class="pp"><p>
+      </div>
+  </section>
+     
+  <section id="section-offer" class="section-offer">
+    <div class="section-offer__paragraph">
+        <h1 data-translate="what_we_offer">რას გთავაზობთ</h1>
+        <p data-translate="introduction">
             იუჯითი მსხვილ, საშუალო და მცირე ზომის ორგანიზაციებს უახლეს ტექნოლოგიებს, უნიკალურ გადაწყვეტებს და მრავალმხრივი კომპეტენციებით სარგებლობის შესაძლებლობას სთავაზობს.
-
-წლების მანძილზე, იუჯითიმ განავითარა ისეთი სერვისები და გადაწყვეტები, რომლებიც მორგებულია ინდუსტრიულ მოთხოვნებზე და ამავდროულად, კლიენტების ინდივიდუალურ საჭიროებებს ითვალისწინებს.
-          </p></div>
-          
+            წლების მანძილზე, იუჯითიმ განავითარა ისეთი სერვისები და გადაწყვეტები, რომლებიც მორგებულია ინდუსტრიულ მოთხოვნებზე და ამავდროულად, კლიენტების ინდივიდუალურ საჭიროებებს ითვალისწინებს.
+        </p>
+    </div>
+    <div class="section-offer__cards-container--negative">
+        <a data-translate="detailed_functionality" class="header-area" target="_blank" href="">
+            <span data-translate="detailed_functionality_text">თუ თქვენთვის ნაცნობია</span>
+            <span style="color: rgb(87, 0, 0);">&#10006;</span>
+        </a>
+        <div class="card-layout">
+            <div><img width="40px" src="/images/icons/services/icons-01.svg" class="optional-logo" alt="logo">
+                <a activeclassname="active" href="">
+                    <p data-translate="service_extended_process">მომსახურების გაწელილი პროცესი</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-10.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="incorrect_forecasting">არასწორი და გართულებული პროგნოზირება</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-04.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="ineffective_communication">მომხმარებელთან არაეფექტური კომუნიკაცია</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-05.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="absence_of_control_mechanisms">კონტროლის მექანიზმების არარსებობა</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="ineffective_document_management">დოკუმენტების არაეფექტური მართვა (ფურცლომანია)</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="scattered_information">რამდენიმე პროგრამაში გაფანტული ინფორმაცია</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="pricing_difficulties">პრეისკურანტებში ფასების მოძიების სირთულეები</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="service_queue_issues">რიგები სერვისის გაწევის პროცესში</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="inventory_mistakes">ცდომილებები მარაგების აღრიცხვაში</p>
+                </a>
+            </div>
         </div>
-        <div class="cards-container">
-          <a class="header-area" target="_blank" href="/solutions/">თუ თქვენთვის ნაცნობია <span style="color: rgb(87, 0, 0);">&#10006;</span> </a>
-          <div class="card-layout">
-            <div><img width="40px" src="/images/icons/services/icons-01.svg" class="optional-logo" alt="logo"><a
-                activeclassname="active" href="/solutions/it-infrastructure-and-cyber-security/">
-                <p>მომსახურების
-                  გაწელილი
-                  პროცესი</p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-10.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/business-applications/">
-                <p>არასწორი და
-                  გართულებული
-                  პროგნოზირება</p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-04.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/electricity-and-building-management-systems/">
-                <p>მომხმარებელთან
-                  არაეფექტური
-                  კომუნიკაცია
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-05.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/video-surveillance-solutions-and-security-systems/">
-                <p> კონტროლის
-                  მექანიზმების
-                  არარსებობა
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>დოკუმენტების
-                  არაეფექტური
-                  მართვა
-                  (ფურცლომანია)
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>რამდენიმე
-                  პროგრამაში
-                  გაფანტული
-                  ინფორმაცია
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>პრეისკურანტებში
-                  ფასების
-                  მოძიების
-                  სირთულეები                 
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>რიგები სერვისის
-                  გაწევის პროცესში
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>ცდომილებები
-                  მარაგების
-                  აღრიცხვაში
-                  </p>
-              </a></div>
-          
-          </div>
+    </div>
+    <div class="section-offer__cards-container--positive">
+        <a class="header-area1" target="_blank" href="">
+            <span style="color: white;" data-translate="what_we_offer_positive">რას გთავაზობთ</span>
+        </a>
+        <div class="card-layout1">
+            <div><img width="40px" src="/images/icons/services/icons-01.svg" class="optional-logo" alt="logo">
+                <a activeclassname="active" href="">
+                    <p data-translate="digital_pricing">ციფრული პრეისკურანტი</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-10.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="complete_vehicle_information">სრული ინფორმაცია ავტომობილების შესახებ</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-04.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="perfect_reporting">სრულყოფილი რეპორტინგი</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-05.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="service_process_improvement">მომსახურების პროცესის გაუმჯობესება</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="process_control">პროცესების კონტროლი</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="service_process_digitalization">ავტოსერვისის პროცესის გაციფრულება</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="master_management">ოსტატების მენეჯმენტი</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="document_digitalization">დოკუმენტების გაციფრულება</p>
+                </a>
+            </div>
+            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo">
+                <a href="">
+                    <p data-translate="inventory_control">მარაგების კონტროლი</p>
+                </a>
+            </div>
         </div>
-        <div class="cards-container1">
-          <a class="header-area1" target="_blank" href="/solutions/">რას გთავაზობთ <span style="color: rgb(17, 180, 17);">&#10004;</span></a>
-          <div class="card-layout1">
-            <div><img width="40px" src="/images/icons/services/icons-01.svg" class="optional-logo" alt="logo"><a
-                activeclassname="active" href="/solutions/it-infrastructure-and-cyber-security/">
-                <p>ციფრული
-                  პრეისკურანტი</p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-10.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/business-applications/">
-                <p>სრული ინფორმცია
-                  ავტომობილების
-                  შესახებ
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-04.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/electricity-and-building-management-systems/">
-                <p>სრულყოფილი
-                  რეპორტინგი</p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-05.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/video-surveillance-solutions-and-security-systems/">
-                <p>მომსახურების
-                  პროცესის
-                  გაუმჯობესება
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>პროცესების
-                  კონტროლი</p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>ავტოსერვისის
-                  პროცესის
-                  გაციფრულება</p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>ოსტატების
-                  მენეჯმენტი
-                  </p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>დოკუმენტების
-                  გაციფრულება</p>
-              </a></div>
-            <div><img width="40px" src="/images/icons/services/icons-11.svg" class="optional-logo" alt="logo"><a
-                href="/solutions/software/">
-                <p>მარაგების
-                  კონტროლი
-                  </p>
-              </a></div>
-          </div>
+    </div>
+</section>
+
+<section class="section-technical-characteristics" >
+  <h1 data-translate="main-technical-features">ძირითადი ტექნიკური მახასიათებლები</h1>
+  <ul class="box">
+    <div data-translate="tech-info-recording">ტექნიკის ინფორმაციის აღრიცხვა</div>
+    <div data-translate="accounting-software-integration">საბუღალტრო პროგრამასთან ინტეგრაცია</div>
+    <div data-translate="file-upload">სხვადასხვა ფორმატის ფაილების ატვირთვა</div>
+    <div data-translate="role-permission-management">როლების და უფლებების მართვა</div>
+    <div data-translate="appointments-booking">ვიზიტებისა და მიმლინებების დაჯავშნა</div>
+    <div data-translate="digital-document-creation">ციფრული დოკუმენტების შექმნა</div>
+    <div data-translate="ad-integration">AD-სთან ინტეგრაცია</div>
+    <div data-translate="warranty-recording">ძირითადი გარანტიების აღრიცხვა</div>
+    <div data-translate="reporting-system">რეპორტინგ-სისტემა</div>
+    <div data-translate="user-management">მომხმარებლების მართვა</div>
+    <div data-translate="digital-quotation-creation">ციფრული პრეისკურანტის შექმნა</div>
+    <div data-translate="craftsmen-time-recording">ოსტატების დროის აღრიცხვა</div>
+    
+  </ul>
+</section>
+     <section id="section-service" class="section-service">
+    <div class="container-action">
+        <h1 data-translate="fully_digitized_service_process">სრულად გაციფრულებული სერვისის პროცესი</h1>
+        <div class="container-action__child-container">
+            <div class="actionn">
+                <div class="container-action__child-container-child">
+                    <img src="Avto_Servisis_Avtomatizaciis_Sistema/14.png" alt="">
+                </div>
+                <div class="container-action__child-container-child1">
+                    <h2 data-translate="vehicle_registration">ავტომობილის რეგისტრაცია</h2>
+                </div>
+            </div>
+            <div class="actionn">
+                <div class="container-action__child-container-child">
+                    <img src="Avto_Servisis_Avtomatizaciis_Sistema/15.png" alt="">
+                </div>
+                <div class="container-action__child-container-child1">
+                    <h2 data-translate="service_initiation">ავტოსერვისის ინიცირება</h2>
+                </div>
+            </div>
+            <div class="actionn">
+                <div class="container-action__child-container-child">
+                    <img src="Avto_Servisis_Avtomatizaciis_Sistema/16.png" alt="">
+                </div>
+                <div class="container-action__child-container-child1">
+                    <h2 data-translate="vehicle_inspection">ავტომობილის დათვალიერება</h2>
+                </div>
+            </div>
+            <div class="actionn">
+                <div class="container-action__child-container-child">
+                    <img src="Avto_Servisis_Avtomatizaciis_Sistema/19.png" alt="">
+                </div>
+                <div class="container-action__child-container-child1">
+                    <h2 data-translate="service_cost_estimation">სერვისის ღირებულების დადგენა</h2>
+                </div>
+            </div>
+            <div class="actionn">
+                <div class="container-action__child-container-child">
+                    <img src="Avto_Servisis_Avtomatizaciis_Sistema/17.png" alt="">
+                </div>
+                <div class="container-action__child-container-child1">
+                    <h2 data-translate="repair_process">შეკეთების პროცესი</h2>
+                </div>
+            </div>
+            <div class="actionn">
+                <div class="container-action__child-container-child">
+                    <img src="Avto_Servisis_Avtomatizaciis_Sistema/18.png" alt="">
+                </div>
+                <div class="container-action__child-container-child1">
+                    <h2 data-translate="service_closing">სერვისის ჩახურვა</h2>
+                </div>
+            </div>
         </div>
-      </section>
-      <section class="section3-5">
-        <div class="container-action">
-          <div class="action-h1">
-            სრულად გაციფრულებული სერვისის პროცესი
-          </div>
-          <div class="container-action-child">
-            <div class="actionn">
-              <div class="container-action-child-child">
-                <img src="Avto_Servisis_Avtomatizaciis_Sistema/14.png" alt="">
-              </div>
-              <div class="container-action-child-child1">
-                <h1>ავტომობილის
-                  რეგისტრაცია</h1>
-              </div>
-            </div>
-            <div class="actionn">
-              <div class="container-action-child-child">
-                <img src="Avto_Servisis_Avtomatizaciis_Sistema/15.png" alt="">
-              </div>
-              <div class="container-action-child-child1">
-                <h1>ავტოსერვისის
-                  ინიცირება</h1>
-              </div>
-            </div>
-            <div class="actionn">
-              <div class="container-action-child-child">
-                <img src="Avto_Servisis_Avtomatizaciis_Sistema/16.png" alt="">
-              </div>
-              <div class="container-action-child-child1">
-                <h1>ავტომობილის
-                  დათვალიერება</h1>
-              </div>
-            </div>
-            <div class="actionn">
-              <div class="container-action-child-child">
-                <img src="Avto_Servisis_Avtomatizaciis_Sistema/19.png" alt="">
-              </div>
-              <div class="container-action-child-child1">
-                <h1>სერვისის
-                  ღირებულების
-                  დადგენა</h1>
-              </div>
-            </div>
-            <div class="actionn">
-              <div class="container-action-child-child">
-                <img src="Avto_Servisis_Avtomatizaciis_Sistema/17.png" alt="">
-              </div>
-              <div class="container-action-child-child1">
-                <h1>შეკეთების
-                  პროცესი</h1>
-              </div>
-            </div>
-            <div class="actionn">
-              <div class="container-action-child-child">
-                <img src="Avto_Servisis_Avtomatizaciis_Sistema/18.png" alt="">
-              </div>
-              <div class="container-action-child-child1">
-                <h1>სერვისის
-                  ჩახურვა
-                  </h1>
-              </div>
-            </div>
-        
-        </div>
-      </section>
-      <section class="section4">
-        <input class="first" checked id="first" name="scroll" type="radio">
-        <input class="second" id="second" name="scroll" type="radio">
-        <input class="third" id="third" name="scroll" type="radio">
-        <input class="fourth" id="fourth" name="scroll" type="radio">
-        <input class="fifth" id="fifth" name="scroll" type="radio">
-        <input class="sixth" id="sixth" name="scroll" type="radio">
-        <input class="seventh" id="seventh" name="scroll" type="radio">
-        <input class="eighth" id="eighth" name="scroll" type="radio">
-        <input class="nineth" id="nineth" name="scroll" type="radio">
-        <input class="tenth" id="tenth" name="scroll" type="radio">
-        <div class="solutions-container">
-          <div class="solutions-text">
-            <h1>ფუნქციონალი დეტალურად</h1>
-          </div>
-          <div class="solutions-div-container">
-            <div class="solutions-div1">
-              <div class="solutions-div-container">
-                <ul class="accordion-menu">
-                    <li class="link">
-                      <label for="first" class="dropdown dropdown1">
-                       <div class="itemsvg">
-                        <img src="svgs/file.png" alt="">
-                       </div>
-                        <div class="dge">
-                          <h1>სერვისის პროცესის სრული გაციფრულება</h1>
-                        </div>
-                        
-                          <img class="dropsvg dropsvg2" src="svgs/dropdown.svg" alt="">
-                         
-                      </label>
-                      <ul class="submenu-items submenu-items1">
-                        <li>გაციფრულებულია თითოეული ავტო-ტექნიკის შეკეთების პროცესი -
-                          დასაწყისიდან ბოლომდე</li>
-                        <li>პროგრამულად ფიქსირდება და აღირიცხება: ტექნიკის მიღება, ბოქსში
-                          განაწილება, ოსტატზე მიმაგრება, დეფექტური აქტის შედგენა,
-                          ხელოსნის მიერ გაწეული სერვისი და საჭირო ნაწილები და ბოლოს -
-                          მიღება-ჩაბარების გაფორმება</li>
-                        <li>ამასთან, თუ ავტომობილის მფლობელი სარგებლობს პრეისკურანტის
-                          პირობებით ან ტექნიკაზე ვრცელდება გარანტია - ეს ინფორმაციაც
-                          გათვალისწინებულია აღრიცხვის პროცესში</li>
-                          <li><a href="#">გაიგე მეტი</a></li>
-                      </ul>
-                    </li>
-                    <li class="link">
-                        <label for="second" class="dropdown dropdown2">
-                          <div class="itemsvg">
-                            <img src="svgs/box (3).png" alt="">
-                           </div>
-                          <div class="dge">
-                            <h1>საწყობის მართვა და მარაგების კონტროლი</h1>
-                          </div>
-                          <img class="dropsvg dropsvg2" src="svgs/dropdown.svg" alt="">
+    </div>
+</section>
 
-                        </label>
-                        <ul class="submenu-items submenu-items2">
-                          <li>პროგრამა ინტეგრირდება საბუღალტრო სისტემებთან - შესაბამისად
-                            გვაძლევს სრულ ხედვას საწყობებზე არსებულ ნაშთებზე</li>
-                          <li>სააღრიცხვო სისტემასთან ინფორმაციის ონლაინ რეჟიმში გაცვლის
-                            საფუძველზე ვიყენებთ ნაშთებს საწყობის სხვადასხვა ფილიალების
-                            მიხედვი</li>
-                          <li>ინტეგრაცია საშუალებას გვაძლევს ავტოსერვისის გაწევისას
-                            გამოყენებული ნაწილები და სახარჯი მასალები ავტომატურად
-                            ჩამოვწეროთ სააღრიცხვო სისტემის მარაგებიდან</li>
-                            <li><a href="#">გაიგე მეტი</a></li>
-                        </ul>
-                    </li>
-                    <li class="link">
-                        <label for="third" class="dropdown dropdown3">
-                          <div class="itemsvg">
-                            <img src="svgs/group.png" alt="">
-                           </div>
-                          <div class="dge">
-                            <h1>მომხმარებლების ეფექტური მართვა</h1>
-                          </div>
-                          <img class="dropsvg dropsvg3" src="svgs/dropdown.svg" alt="">
-
-                        </label>
-                        <ul class="submenu-items submenu-items3">
-                          <li>მომხმარებლის ისტორიაში ვხედავთ დეტალებს - რომელი ტექნიკა შეკეთდა,
-                            ვინ იყო მძღოლი, რა დროს, რა სახის მომსახურება იქნა გაწეული, რომელი
-                            ოსტატის მიერ, რა ნაწილები და სახარჯი მასალები იქნა გამოყენებული და
-                            რა ფასად</li>
-                          <li>ასევე, გაციფრულებულია პრეისკურანტი და საგარანტიო პირობები
-                          </li>
-                            <li><a href="#">გაიგე მეტი</a></li>
-                        </ul>
-                    </li>
-                    <li class="link">
-                        <label for="fourth" class="dropdown dropdown4">
-                          <div class="itemsvg">
-                            <img src="svgs/reputation.png" alt="">
-                           </div>
-                          <div class="dge">
-                            <h1>სერვისის წინასწარ დაგეგმვა</h1>
-                          </div>
-                          <img class="dropsvg dropsvg4" src="svgs/dropdown.svg" alt="">
-
-                        </label>
-                        <ul class="submenu-items submenu-items4">
-                          <li>მომხმარებლების გამოცდილების
-                            გაუმჯობესების მიზნით, ავტოსერვისზე ჩაწერა
-                            წინასწარ ონლაინ არის შესაძლებელია</li>
-                          <li>აღნიშნული ფუნქციონალი მოიცავს ავტო-ტექნიკის როგორც სერვის
-                            ცენტრში შეეკეთებაზე ჩაწერას, ასევე ოსტატის ადგილზე მივნილების
-                            მოსახურების შეკვეთას
-                            </li>
-                            <li><a href="#">გაიგე მეტი</a></li>
-                        </ul>
-                    </li>
-                    <li class="link">
-                      <label for="fifth" class="dropdown dropdown5">
-                        <div class="itemsvg">
-                          <img src="svgs/plan.png" alt="">
-                         </div>
-                        <div class="dge">
-                          <h1>ციფრული პრეისკურანტი</h1>
-                        </div>
-                          <img class="dropsvg dropsvg5" src="svgs/dropdown.svg" alt="">
-                      </label>
-                      <ul class="submenu-items submenu-items5">
-                        <li>გაციფრულებულია კომპანიებთან
-                          სატენდერო ხელშეკრულებები და
-                          პრეისკურანტი
-                          </li>
-                        <li>სატენდერო ვადის განმავლობაში სერვისის გაწევისას პროგრამაში
-                          ნაწილების, სერვისის და სახარჯი მასალების ფასები პეიკსურანტის
-                          მიხედვით აღირიცხება
-                          </li>
-                          <li><a href="#">გაიგე მეტი</a></li>
-                      </ul>
-                  </li>
-                  <li class="link">
-                    <label for="sixth" class="dropdown dropdown6">
-                      <div class="itemsvg">
-                        <img src="svgs/private-transport.png" alt="">
-                       </div>
-                      <div class="dge">
-                        <h1>ოსტატების მენეჯმენტი
-                        </h1>
-                      </div>
-                        <img class="dropsvg dropsvg6" src="svgs/dropdown.svg" alt="">
-                    </label>
-                    <ul class="submenu-items submenu-items6">
-                      <li>ავტოსერვისის დავალებას ემაგრება ოსტატი - ხოლო დავალების
-                        დასრულებისას პროგრამაშივე შესაძლებელია დავალებაზე
-                        დახარჯული დროის აღრიცხვა ოსტატების მიხედვით</li>
-                      <li>რეპორტებში ვხედავთ თითოეული ოსტატის მიერ დახარჯულ ჯამურ
-                        საათებს, ხოლო ასანაზღაურებელ თანხას პროგრამა ავტომატურად
-                        გვითვლის
-                        </li>
-                        <li><a href="#">გაიგე მეტი</a></li>
-                    </ul>
-                </li>
-                <li class="link">
-                  <label for="seventh" class="dropdown dropdown7">
+<section id="section-functionals" class="section-functionals">
+  <input class="first" checked id="first" name="scroll" type="radio" >
+  <input class="second" id="second" name="scroll" type="radio">
+  <input class="third" id="third" name="scroll" type="radio" >
+  <input class="fourth" id="fourth" name="scroll" type="radio">
+  <input class="fifth" id="fifth" name="scroll" type="radio" >
+  <input class="sixth" id="sixth" name="scroll" type="radio">
+  <input class="seventh" id="seventh" name="scroll" type="radio" >
+  <input class="eighth" id="eighth" name="scroll" type="radio" >
+  <input class="nineth" id="nineth" name="scroll" type="radio" >
+  <input class="tenth" id="tenth" name="scroll" type="radio">
+  <div class="solutions-container">
+    <div class="solutions-container__solutions-text">
+      <h1 data-translate="functional_detail">ფუნქციონალი დეტალურად</h1>
+    </div>
+    <div class="solutions-container__wrapper">
+      <div class="solutions-div1">
+        <div class="solutions-container__wrapper">
+          <ul class="accordion-menu">
+              <li class="link">
+                <label for="first" class="dropdown dropdown1">
+                 <div class="itemsvg">
+                  <img src="svgs/file.png" alt="">
+                 </div>
+                  <div class="dge">
+                    <h1 data-translate="service_process">სერვისის პროცესის სრული გაციფრულება</h1>
+                  </div>
+                  <img class="dropsvg dropsvg2" src="svgs/dropdown.svg" alt="">
+                </label>
+                <ul class="submenu-items submenu-items1">
+                  <li data-translate="service_process_detail1">გაციფრულებულია თითოეული ავტო-ტექნიკის შეკეთების პროცესი - დასაწყისიდან ბოლომდე</li>
+                  <li data-translate="service_process_detail2">პროგრამულად ფიქსირდება და აღირიცხება: ტექნიკის მიღება, ბოქსში განაწილება, ოსტატზე მიმაგრება, დეფექტური აქტის შედგენა, ხელოსნის მიერ გაწეული სერვისი და საჭირო ნაწილები და ბოლოს - მიღება-ჩაბარების გაფორმება</li>
+                  <li data-translate="service_process_detail3">ამასთან, თუ ავტომობილის მფლობელი სარგებლობს პრეისკურანტის პირობებით ან ტექნიკაზე ვრცელდება გარანტია - ეს ინფორმაციაც გათვალისწინებულია აღრიცხვის პროცესში</li>
+                </ul>
+              </li>
+              <li class="link">
+                  <label for="second" class="dropdown dropdown2">
                     <div class="itemsvg">
-                      <img src="svgs/contract.png" alt="">
+                      <img src="svgs/box (3).png" alt="">
                      </div>
                     <div class="dge">
-                      <h1>ხელშეკრულებები, აქტები, მიღება-ჩაბარებები</h1>
+                      <h1 data-translate="warehouse_management">საწყობის მართვა და მარაგების კონტროლი</h1>
                     </div>
-                      <img class="dropsvg dropsvg7" src="svgs/dropdown.svg" alt="">
+                    <img class="dropsvg dropsvg2" src="svgs/dropdown.svg" alt="">
                   </label>
-                  <ul class="submenu-items submenu-items7">
-                    <li>პრეისკურანტი ნებისმიერი ვადითა და პირობებით
-                    </li>
-                    <li>ავტომობილის შემოწმების შედეგად შედგენილი დეფექტური აქტები -
-                      სერვისებითა და საჭირო ნაწილებით</li>
-                    <li>ავტოსერვისის სრული ხარჯთაღრიცხვა - სერვისი, ნაწილების,
-                      ოსტატის სამივლინებო თანხებისა და სახარჯი მასალების თანხების
-                      გათვალისწინებით</li>
-                    <li>მიღება-ჩაბარებები - სერვისის დასრულებისას პროგრამა
-                      გვიგენერირებს სრულყოფილ მიღება-ჩაბარების აქტებს და ინვოისებს
-                      </li>
-                      <li><a href="#">გაიგე მეტი</a></li>
+                  <ul class="submenu-items submenu-items2">
+                    <li data-translate="warehouse_management_detail1">პროგრამა ინტეგრირდება საბუღალტრო სისტემებთან - შესაბამისად გვაძლევს სრულ ხედვას საწყობებზე არსებულ ნაშთებზე</li>
+                    <li data-translate="warehouse_management_detail2">სააღრიცხვო სისტემასთან ინფორმაციის ონლაინ რეჟიმში გაცვლის საფუძველზე ვიყენებთ ნაშთებს საწყობის სხვადასხვა ფილიალების მიხედვი</li>
+                    <li data-translate="warehouse_management_detail3">ინტეგრაცია საშუალებას გვაძლევს ავტოსერვისის გაწევისას გამოყენებული ნაწილები და სახარჯი მასალები ავტომატურად ჩამოვწეროთ სააღრიცხვო სისტემის მარაგებიდან</li>
                   </ul>
               </li>
               <li class="link">
-                <label for="eighth" class="dropdown dropdown8">
+                  <label for="third" class="dropdown dropdown3">
+                    <div class="itemsvg">
+                      <img src="svgs/group.png" alt="">
+                     </div>
+                    <div class="dge">
+                      <h1 data-translate="user_management">მომხმარებლების ეფექტური მართვა</h1>
+                    </div>
+                    <img class="dropsvg dropsvg3" src="svgs/dropdown.svg" alt="">
+                  </label>
+                  <ul class="submenu-items submenu-items3">
+                    <li data-translate="user_management_detail1">მომხმარებლის ისტორიაში ვხედავთ დეტალებს - რომელი ტექნიკა შეკეთდა, ვინ იყო მძღოლი, რა დროს, რა სახის მომსახურება იქნა გაწეული, რომელი ოსტატის მიერ, რა ნაწილები და სახარჯი მასალები იქნა გამოყენებული და რა ფასად</li>
+                    <li data-translate="user_management_detail2">ასევე, გაციფრულებულია პრეისკურანტი და საგარანტიო პირობები</li>
+                  </ul>
+              </li>
+              <li class="link">
+                  <label for="fourth" class="dropdown dropdown4">
+                    <div class="itemsvg">
+                      <img src="svgs/reputation.png" alt="">
+                     </div>
+                    <div class="dge">
+                      <h1 data-translate="service_planning">სერვისის წინასწარ დაგეგმვა</h1>
+                    </div>
+                    <img class="dropsvg dropsvg4" src="svgs/dropdown.svg" alt="">
+                  </label>
+                  <ul class="submenu-items submenu-items4">
+                    <li data-translate="service_planning_detail1">მომხმარებლების გამოცდილების გაუმჯობესების მიზნით, ავტოსერვისზე ჩაწერა წინასწარ ონლაინ არის შესაძლებელია</li>
+                    <li data-translate="service_planning_detail2">აღნიშნული ფუნქციონალი მოიცავს ავტო-ტექნიკის როგორც სერვის ცენტრში შეეკეთებაზე ჩაწერას, ასევე ოსტატის ადგილზე მიახლოების მოლოდინის შეკვეთას</li>
+                  </ul>
+              </li>
+              <li class="link">
+                <label for="fifth" class="dropdown dropdown5">
                   <div class="itemsvg">
-                    <img src="svgs/goal.png" alt="">
+                    <img src="svgs/plan.png" alt="">
                    </div>
                   <div class="dge">
-                    <h1>გარანტიების აღრიცხვა</h1>
+                    <h1 data-translate="digital_price_list">ციფრული პრეისკურანტი</h1>
                   </div>
-                    <img class="dropsvg dropsvg8" src="svgs/dropdown.svg" alt="">
+                    <img class="dropsvg dropsvg5" src="svgs/dropdown.svg" alt="">
                 </label>
-                <ul class="submenu-items submenu-items8">
-                  <li>შიდა გარანტიის შემთხვევაში ხარჯის აღება ხდება კომპანიის ხარჯზე</li>
-                  <li>ხოლო მომწოდებლის გარანტიის შემთხვევაში პროგრამაშივე ეთითება
-                    მომწოდებელთან გაგზავნილი მოთხოვნის დეტალები
-                    </li>
-                    <li><a href="#">გაიგე მეტი</a></li>
+                <ul class="submenu-items submenu-items5">
+                  <li data-translate="digital_price_list_detail1">გაციფრულებულია კომპანიებთან სატენდერო ხელშეკრულებები და პრეისკურანტი</li>
+                  <li data-translate="digital_price_list_detail2">სატენდერო ვადის განმავლობაში სერვისის გაწევისას პროგრამაში ნაწილების, სერვისის და სახარჯი მასალების ფასები პეიკსურანტის მიხედვით აღირიცხება</li>
                 </ul>
             </li>
             <li class="link">
-              <label for="nineth" class="dropdown dropdown9">
+              <label for="sixth" class="dropdown dropdown6">
                 <div class="itemsvg">
-                  <img src="svgs/stock-market.png" alt="">
+                  <img src="svgs/private-transport.png" alt="">
                  </div>
                 <div class="dge">
-                  <h1>პროგრამის მომხმარებლების მართვა</h1>
+                  <h1 data-translate="technician_management">ოსტატების მენეჯმენტი</h1>
                 </div>
-                  <img class="dropsvg dropsvg9" src="svgs/dropdown.svg" alt="">
+                  <img class="dropsvg dropsvg6" src="svgs/dropdown.svg" alt="">
               </label>
-              <ul class="submenu-items submenu-items9">
-                <li>სისტემაში შესაძლებელია პროგრამის მომხმარებლებისთვის
-                  როლების მინიჭება მათი უფლება-მოვალეობების მიხედვით.</li>
-                <li>თითიოეულ როლზე შესაძლებელია წინასწარ განსაზღვრული უფლებების
-                  მინიჭება, შესაბამისად პროგრამაში ავტორიზებული ყველა
-                  მომხმარებელი შეძლებს მხოლოდ მასზე მინიჭებული უფლებების
-                  შესაბამისი ქმედებების განხორციელებას.</li>
-                  <li><a href="#">გაიგე მეტი</a></li>
+              <ul class="submenu-items submenu-items6">
+                <li data-translate="technician_management_detail1">ავტოსერვისის დავალებას ემაგრება ოსტატი - ხოლო დავალების დასრულებისას პროგრამაშივე შესაძლებელია დავალებაზე დახარჯული დროის აღრიცხვა ოსტატების მიხედვით</li>
+                <li data-translate="technician_management_detail2">რეპორტებში ვხედავთ თითოეული ოსტატის მიერ დახარჯულ ჯამურ საათებს, ხოლო ასანაზღაურებელ თანხას პროგრამა ავტომატურად გვითვლის</li>
               </ul>
           </li>
           <li class="link">
-            <label for="tenth" class="dropdown dropdown10">
+            <label for="seventh" class="dropdown dropdown7">
               <div class="itemsvg">
-                <img src="svgs/group.png" alt="">
+                <img src="svgs/contract.png" alt="">
                </div>
               <div class="dge">
-                <h1>სრულყოფილი რეპორტინგი</h1>
+                <h1 data-translate="contracts_documents">ხელშეკრულებები, აქტები, მიღება-ჩაბარებები</h1>
               </div>
-                <img class="dropsvg dropsvg10" src="svgs/dropdown.svg" alt="">
+                <img class="dropsvg dropsvg7" src="svgs/dropdown.svg" alt="">
             </label>
-            <ul class="submenu-items submenu-items10">
-              <li>ოსტატების მიერ გაწეული სამუშაოსა და ასანაზღაურებელი
-                თანხების შესახებ</li>
-              <li>ავტომობილების შეკეთების პროცესი - რომელი
-                ავტომობილია დასრულებული და რომელი
-                იმყოფება შეკეთების პროცესში</li>
-              <li>ინფორმაცია საგარანტიო თანხების შესახებ
-                და სხვა სასურველი ინფორმაცია</li>
-                <li><a href="#">გაიგე მეტი</a></li>
+            <ul class="submenu-items submenu-items7">
+              <li data-translate="contracts_documents_detail1">პრეისკურანტი ნებისმიერი ვადითა და პირობებით</li>
+              <li data-translate="contracts_documents_detail2">ავტომობილის შემოწმების შედეგად შედგენილი დეფექტური აქტები - სერვისებითა და საჭირო ნაწილებით</li>
+              <li data-translate="contracts_documents_detail3">ავტოსერვისის სრული ხარჯთაღრიცხვა - სერვისი, ნაწილების, ოსტატის სამივლინებო თანხებისა და სახარჯი მასალების თანხების გათვალისწინებით</li>
+              <li data-translate="contracts_documents_detail4">მიღება-ჩაბარებები - სერვისის დასრულებისას პროგრამა გვიგენერირებს სრულყოფილ მიღება-ჩაბარების აქტებს და ინვოისებს</li>
             </ul>
         </li>
-                </ul>
+        <li class="link">
+          <label for="eighth" class="dropdown dropdown8">
+            <div class="itemsvg">
+              <img src="svgs/goal.png" alt="">
+             </div>
+            <div class="dge">
+              <h1 data-translate="warranties">გარანტიების აღრიცხვა</h1>
             </div>
-            </div>
-            <div class="solutions-div2">       
-            </div>
+              <img class="dropsvg dropsvg8" src="svgs/dropdown.svg" alt="">
+          </label>
+          <ul class="submenu-items submenu-items8">
+            <li data-translate="warranties_detail1">შიდა გარანტიის შემთხვევაში ხარჯის აღება ხდება კომპანიის ხარჯზე</li>
+            <li data-translate="warranties_detail2">ხოლო მომწოდებლის გარანტიის შემთხვევაში პროგრამაშივე ეთითება მომწოდებელთან გაგზავნილი მოთხოვნის დეტალები</li>
+          </ul>
+      </li>
+      <li class="link">
+        <label for="nineth" class="dropdown dropdown9">
+          <div class="itemsvg">
+            <img src="svgs/stock-market.png" alt="">
+           </div>
+          <div class="dge">
+            <h1 data-translate="user_management_program">პროგრამის მომხმარებლების მართვა</h1>
           </div>
-        </div>
-      </section>
-      <section class="section5">
-        <div class="try-it-out-container">
-            <div class="title">
-                <h5>სცადე შენ თვითონ<!-- -->,</h5>
-                <h4>გამოაგზავნე ელ.ფოსტა</h4>
-              </div>
-              <label for="email" class="email">               
-              <img src="svgs/mail.svg" alt="">
-                <input id="mail" autocomplete="off" placeholder="შეიყვანე ელ.ფოსტა" type="text" value=""></span>
-                <button type="submit" onclick="sendPostRequest()" class="">გაგზავნა</button>
-              </label>
-            </div>
-            <div class="try-it-out-img">
-              <img src="Avto_Servisis_Avtomatizaciis_Sistema/27.png" alt="">
-            </div>
-      </section>
-      <section class="section6">
-        <div class="use-cases-container">
-          <input onclick="paragraph1()" type="radio" name="radio"  checked id="one" value="1" />
-          <input onclick="paragraph2()" type="radio" name="radio" id="two" value="2" />
-          <input onclick="paragraph3()" type="radio"  name="radio" id="three" value="3" />
-          <h2>UGT-ის პროდუქტების განვითარების
-            გუნდი</h2>
-          <div class="cases-container">
-              <div class="use-cases-child1">
-                <label class="one" for="one">
-                  UGT
-                </label>
-                  <label class="two" for="two">
-                    წარმატებული პროექტები
-                </label>
-                  <label class="three" for="three">
-                    მასშტაბური პროექტები
-                </label>
-              </div>
-              <div class="use-cases-child2">
-                <div class="preview">
+            <img class="dropsvg dropsvg9" src="svgs/dropdown.svg" alt="">
+        </label>
+        <ul class="submenu-items submenu-items9">
+          <li data-translate="user_management_program_detail1">სისტემაში შესაძლებელია პროგრამის მომხმარებლებისთვის როლების მინიჭება მათი უფლება-მოვალეობების მიხედვით.</li>
+          <li data-translate="user_management_program_detail2">თითიოეულ როლზე შესაძლებელია წინასწარ განსაზღვრული უფლებების მინიჭება, შესაბამისად პროგრამაში ავტორიზებული ყველა მომხმარებელი შეძლებს მხოლოდ მასზე მინიჭებული უფლებების შესაბამისი ქმედებების განხორციელებას.</li>
+        </ul>
+    </li>
+    <li class="link">
+      <label for="tenth" class="dropdown dropdown10">
+        <div class="itemsvg">
+          <img src="svgs/group.png" alt="">
          </div>
-                <div class="preview2">
-                  <h4 id="preview-h4">ციფრული ტექნოლოგიების ლიდერი საქართველოში</h4>
-                  <p id="preview-p">იუჯითი საქართველოში ციფრული ტექნოლოგიების სფეროს ლიდერია. 27 წელზე მეტია წარმატებით ვქმნით ისეთ სერვისებსა და გადაწყვეტებს, რომლებიც მორგებულია მსხვილი, მცირე და საშუალო ზომის ორგანიზაციების საჭიროებებზე.</p>
-                  <a href="/ka/use-cases/finance/">გაიგე მეტი</a>
-                </div>
-              </div>
-          </div>
-      </section>
-      <section class="section7">
-       <div class="slider-container swiper">
-        <h2>ისტორიები ჩვენი მომხმარებლებისგან</h2>
-      <div class="slider-content">
-        <div class="card-wrapper swiper-wrapper">
-          <div class="card swiper-slide">
-        
-            <div class="card-content">
-              <div class="img-container">
-              <img src="picures/cmc_logo_2169b5d5d6.webp" alt="">
+        <div class="dge">
+          <h1 data-translate="reporting">სრულყოფილი რეპორტინგი</h1>
+        </div>
+          <img class="dropsvg dropsvg10" src="svgs/dropdown.svg" alt="">
+      </label>
+      <ul class="submenu-items submenu-items10">
+        <li data-translate="reporting_detail1">ოსტატების მიერ გაწეული სამუშაოსა და ასანაზღაურებელი თანხების შესახებ</li>
+        <li data-translate="reporting_detail2">ავტომობილების შეკეთების პროცესი - რომელი ავტომობილია დასრულებული და რომელი იმყოფება შეკეთების პროცესში</li>
+        <li data-translate="reporting_detail3">ინფორმაცია საგარანტიო თანხების შესახებ და სხვა სასურველი ინფორმაცია</li>
+      </ul>
+  </li>
+          </ul>
+      </div>
+      </div>
+      <div class="solutions-div2">       
+      </div>
+    </div>
+  </div>
+</section>
 
-              </div>
-              <p class="description">
-                ძალიან კმაყოფილი ვარ მომსახურებით. პერსონალი მეგობრული და პროფესიონალი იყო, სერვისი კი სწრაფი და
-                ხარისხიანი. ფასები გამჭვირვალე იყო და ჩემი ავტომობილი ახლა შესანიშნავად მუშაობს. მათზე ძალიან კარგი შთაბეჭდილება
-                დამიტოვეს და აუცილებლად მოვინახულებ მომავალშიც. რჩევით ვურჩევ ყველას!
+<section id="section-email" class="section-email">
+  <div class="try-it-out-container">
+    <div class="try-it-out-container__title">
+      <h5 data-translate="try_it_out">სცადე შენ თვითონ<!-- -->,</h5>
+      <h4 data-translate="send_email">გამოაგზავნე ელ.ფოსტა</h4>
+    </div>
+    <label for="try-it-out-container__email" class="try-it-out-container__email">
+      <img src="svgs/mail.svg" alt="">
+      <input id="mail" autocomplete="off" placeholder="send an email" type="text" value="">
+      <button type="submit" onclick="sendPostRequest()" class="" data-translate="send">გაგზავნა</button>
+    </label>
+  </div>
+  <div class="try-it-out-img">
+    <img src="Avto_Servisis_Avtomatizaciis_Sistema/27.png" alt="">
+  </div>
+</section>
 
-              </p>
-              <button class="button">გაიგე მეტი</button>
-            </div>
-            <div class="image-content">
-              <div class="card-image">
-                <img src="./picures/cmc_giorgi_2fa93112cd.webp" class="card-img" alt="" />
-              </div>  
-             <div class="name1">
-              <h6 class="name">გიორგი ნოზაძე</h6>      
-              <h5>პროექტების კოორდინატორი</h5>
-             </div>
-            </div>
-            
-          </div>
-          <div class="card swiper-slide">
-        
-            <div class="card-content">
-              <div class="img-container">
-              <img src="picures/Moneta_Express_Logo_425a8898a1.webp" alt="">
+<section id="section-benefits" class="section-benefits">
+  <div class="usage-benefits-container">
+    <h2 data-translate="ugt_team">UGT - გუნდის შესახებ</h2>
+    <div class="benefits">
+      <div class="benefit1 benefit">
+        <img src="svgs/calendar.svg" alt="">
+        <h1 data-translate="years_in_technology">26</h1>
+        <h3 data-translate="years_in_technology_text">წელი ტექნოლოგიაში</h3>
+      </div>
+      <div class="benefit2 benefit">
+        <img src="svgs/stock.svg" alt="">
+        <h1 data-translate="completed_projects">14877</h1>
+        <h3 data-translate="completed_projects_text">განხორციელებული პროექტი</h3>
+      </div>
+      <div class="benefit3 benefit">
+        <img src="svgs/rocket.svg" alt="">
+        <h1 data-translate="partner_organizations">73</h1>
+        <h3 data-translate="partner_organizations_text">პარტნიორი ორგანიზაცია</h3>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="section-about" class="section-about">
+  <div class="use-cases-container">
+    <input type="radio" name="radio" checked id="one" value="1"/>
+    <input type="radio" name="radio" id="two" value="2"/>
+    <input type="radio" name="radio" id="three" value="3"/>
+    <h2 data-translate="team_development">UGT-ის პროდუქტების განვითარების გუნდი</h2>
+    <div class="cases-container">
+      <div class="cases-label">
+        <label class="one" for="one" data-translate="ugt">UGT</label>
+        <label class="two" for="two" data-translate="successful_projects">წარმატებული პროექტები</label>
+        <label class="three" for="three" data-translate="large_projects">მასშტაბური პროექტები</label>
+      </div>
+      <div class="use-case-content">
+        <div class="preview__image">
+          <!-- Placeholder for images -->
+        </div>
+        <div class="preview__text preview__text--first">
+          <h4 id="preview__h4" data-translate="digital_technology_leader">ციფრული ტექნოლოგიების ლიდერი საქართველოში</h4>
+          <p id="preview__p" data-translate="digital_technology_leader_text">იუჯითი საქართველოში ციფრული ტექნოლოგიების სფეროს ლიდერია. 27 წელზე მეტია წარმატებით ვქმნით ისეთ სერვისებსა და გადაწყვეტებს, რომლებიც მორგებულია მსხვილი, მცირე და საშუალო ზომის ორგანიზაციების საჭიროებებზე.</p>
+        </div>
+        <div class="preview__text preview__text--second">
+          <h4 id="preview__h4" data-translate="successful_projects">წარმატებული პროექტები</h4>
+          <p id="preview__p" data-translate="successful_projects_text">'დონორი და საერთაშორისო ორგანიზაციების მხარდაჭერით განხორციელებული გვაქვს არაერთი მასშტაბური და სახელმწიფო მნიშვნელობის პროექტი</p>
+        </div>
+        <div class="preview__text preview__text--third">
+          <h4 id="preview__h4" data-translate="large_projects">მასშტაბური პროექტები</h4>
+          <p id="preview__p" data-translate="large_projects_text">დღეისათვის გვყავს 70-ზე მეტი საერთაშორისო პარტნიორი და ვაგრძელებთ მსოფლიოში წამყვანი მწარმოებლების უმაღლესი საპარტნიორო სტატუსების შენარჩუნებას. მათ შორისაა HPE, Dell Technologies, Acer, HP, Microsoft, Check Point, IBM, Oracle და სხვა ცნობილი კორპორაციები.</p>
+        </div>
+        <div class="preview-more">
+          <a class="button" href="#popup1" data-translate="learn_more">გაიგე მეტი</a>
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2 data-translate="about_company">კომპანიის შესახებ</h2>
+              <a class="close" href="#section-about">&times;</a>
+              <div class="content">
+                <p data-translate="company_info">იუჯითი ციფრული ტექნოლოგიების სფეროს ლიდერია საქართველოში, რომელიც 27 წელზე მეტია IT სფეროში მოღვაწეობს და ეტაპობრივად აფართოებს მისი მოქმედების არეალს. იუჯითის მისიაა დაეხმაროს ორგანიზაციებს თანამედროვე ტექნოლოგიების დანერგვასა და ციფრულ ტრანსფორმაციაში.</p>
+                <p data-translate="company_solutions">ჩვენი კომპანია წარმატებით ნერგავს სხვადასხვა ბიზნეს სექტორზე მორგებულ გადაწყვეტებს არა მხოლოდ IT მიმართულებით, არამედ ისეთ სფეროებში, როგორებიცაა: შენობების მართვა, ციფრული გადახდები და ნაღდი ფულის დამუშავება, ვიდეო მონიტორინგი და ფიზიკური უსაფრთხოება, ტელეკომუნიკაცია, მზის ენერგიის გამომუშავება და სხვა უახლესი ტექნოლოგიები. ჩვენ გაგვაჩნია გადაწყვეტების და პროფესიული კომპეტენციების სრული სპექტრი. კერძო და საჯარო ორგანიზაციებში ვნერგავთ კომპლექსურ IT ინფრასტრუქტურულ სისტემებს და ბიზნეს აპლიკაციებს. ასევე, თანამედროვე გადაწყვეტილებებზე და საერთაშორისო სტანდარტებზე დაფუძნებული საკუთარი მონაცემთა ცენტრის საშუალებით, კომპანიებს ლოკალურად ვაძლევთ ქლაუდ სერვისებით სარგებლობის შესაძლებლობას.</p>
+                <h2 data-translate="our_experts">ჩვენი ექსპერტები</h2>
+                <p data-translate="our_experts_info">იუჯითი, ტექნოლოგიურ კომპანიებს შორის, მაღალი კვალიფიკაციის მქონე, სერთიფიცირებული არქიტექტებით და ინჟინრებით გამოირჩევა. ჩვენი გუნდის თითოეული წევრი ისწრაფვის პროფესიული განვითარებისკენ და იუჯითის მხარდაჭერით, მუდმივად ეუფლებიან იმ უახლეს სპეციალიზაციებს, რომლებსაც ჩვენი პარტნიორების თანამედროვე გადაწყვეტები მოითხოვს.</p>
               </div>
-              <p class="description">
-                ეს კომპანია მართლაც გამორჩეულია! მათ სწრაფად და პროფესიონალურად მოაგვარეს ჩემი ავტომობილის პრობლემა. მომსახურება
-                გულწრფელი და საიმედო იყო, ხოლო ფასები საკმაოდ სამართლიანი. სახურავი მშვენიერი და კომფორტული იყო. მთლიანობაში, ძალიან
-                კმაყოფილი ვარ და რეკომენდაციას ვუწევ ყველას!
-              </p>
-              <button class="button">გაიგე მეტი</button>
-            </div>
-            <div class="image-content">
-              <div class="card-image">
-                <img src="./picures/screenshot_24_64d0daf8fd.webp" class="card-img" alt="" />
-              </div>  
-             <div class="name1">
-              <h6 class="name">ზვიად გუბელაძე</h6>      
-              <h5>გენერალური დირექტორი</h5>
-             </div>
-            </div>
-            
-          </div>
-          <div class="card swiper-slide">
-        
-            <div class="card-content">
-              <div class="img-container">
-              <img src="picures/basisbank_01_5a28771aa5.webp" alt="">
-
-              </div>
-              <p class="description">
-                ბოლო დროს ძალიან კარგი გამოცდილება მაქვს ამ კომპანიასთან.მათ სწრაფად და ეფექტურად გადაწყვიტეს ჩემი ავტომობილის
-                პრობლემები. მომსახურება რჩება მეგობრული და პროფესიონალური, ხოლო ფასები რაციონალური და გამჭვირვალე იყო. ჩემს მანქანას
-                ახლა შესანიშნავად მუშაობს, და ნამდვილად ვურჩევ მათ ყველას!
-              </p>
-              <button class="button">გაიგე მეტი</button>
-            </div>
-            <div class="image-content">
-              <div class="card-image">
-                <img src="./picures/basisbank_03_54dde900aa.webp" class="card-img" alt="" />
-              </div>  
-             <div class="name1">
-              <h6 class="name">თეა რობაქიძე</h6>      
-              <h5>ბიზნეს პროცესების რედიზაინის მენეჯერი</h5>
-             </div>
-            </div>
-            
-          </div>
-       
-       
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-              <div class="card-image">
-                <img src="./image/profile1.jpg" class="card-img" alt="" />
-              </div>
-            </div>
-            <div class="card-content">
-              <h2 class="name">David Dell</h2>
-              <p class="description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                expedita aliquam, aut quia eum nihil.
-              </p>
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-              <div class="card-image">
-                <img src="./image/profile1.jpg" class="card-img" alt="" />
-              </div>
-            </div>
-            <div class="card-content">
-              <h2 class="name">David Dell</h2>
-              <p class="description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                expedita aliquam, aut quia eum nihil.
-              </p>
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-              <div class="card-image">
-                <img src="./image/profile1.jpg" class="card-img" alt="" />
-              </div>
-            </div>
-            <div class="card-content">
-              <h2 class="name">David Dell</h2>
-              <p class="description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                expedita aliquam, aut quia eum nihil.
-              </p>
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-              <div class="card-image">
-                <img src="./image/profile1.jpg" class="card-img" alt="" />
-              </div>
-            </div>
-            <div class="card-content">
-              <h2 class="name">David Dell</h2>
-              <p class="description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                expedita aliquam, aut quia eum nihil.
-              </p>
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-              <div class="card-image">
-                <img src="./image/profile1.jpg" class="card-img" alt="" />
-              </div>
-            </div>
-            <div class="card-content">
-              <h2 class="name">David Dell</h2>
-              <p class="description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                expedita aliquam, aut quia eum nihil.
-              </p>
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-              <div class="card-image">
-                <img src="./image/profile1.jpg" class="card-img" alt="" />
-              </div>
-            </div>
-            <div class="card-content">
-              <h2 class="name">David Dell</h2>
-              <p class="description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                expedita aliquam, aut quia eum nihil.
-              </p>
-              <button class="button">View More</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="swiper-button-next swiper-navbtn"></div>
-      <div class="swiper-button-prev swiper-navbtn"></div>
-      <div class="swiper-pagination"></div>
     </div>
-      </section>
+  </div>
+</section>
+
+   
     </main>
     <footer class="footer">
       <div class="sub-footer">
-          <div class="message">
-            <h2>დაიწყე გამოყენება დღესვე</h2>
-            <p>სცადე უფასოდ და გაიმარტივე სერვისის პროცესი</p>
-          </div>
-          <div class="action">
-            <button type="button"
-              class=" ">ჩართე საცდელი
-                ვერსია</button>
-                <h6>ბარათის მითითების გარეშე</h6>
-              </div>
+        <div class="message">
+          <h2 data-translate="start_using_today">დაიწყე გამოყენება დღესვე</h2>
+          <p data-translate="try_for_free">სცადე უფასოდ და გაიმარტივე სერვისის პროცესი</p>
+        </div>
+        <div class="action">
+          <a class="button" href="#email-popup1" data-translate="contact_us">დაგვიკავშირდით</a>
+        </div>
       </div>
       <div class="real-footer">
         <div class="info">
-          <div class="dagvikavshirdit">დაგვიკავშირდით:</div>
-          <div class="call">(+995 32) 222 05 05</div>
-          <div class="adress">17e Chavchavadze ave. Tbilisi 0179, Georgia</div>
-          <div class="website">www.ugt.ge</div>
-          <div class="mail">ugt@ugt.ge</div>
+          <div class="dagvikavshirdit" data-translate="contact_us_label">დაგვიკავშირდით:</div>
+          <div class="call" data-translate="phone_number">(+995 32) 222 05 05</div>
+          <div class="adress" data-translate="address">17e Chavchavadze ave. Tbilisi 0179, Georgia</div>
+          <div class="website" data-translate="website">www.ugt.ge</div>
+          <div class="mail" data-translate="email">ugt@ugt.ge</div>
+    <div class="socials">      <a class="navbar--left__li" target="_blank" href="https://www.facebook.com/UGTtechnology"><img src="/svgs/logopngs/png-03.png" class=""></a>
+      <a class="navbar--left__li" target="_blank" href="https://www.linkedin.com/company/ugt/"><img src="/svgs/logopngs/png-02.png" class=""></a>
+      <a class="navbar--left__li" target="_blank" href="https://www.youtube.com/@ugtchannel4706"><img src="/svgs/logopngs/png-01.png" class=""></a></div>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="div-left">
+        <div class="div-left" data-translate="copyright">
           © UGT 2024
         </div>
         <div class="div-right"></div>
       </div>
-
     </footer>
+    
   </body>
 </html>

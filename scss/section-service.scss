@@ -1,22 +1,35 @@
-.section3-5{
-    background-color: $background-color_69;
+.section-service{
+    // background-color: #145234;
+    background-image: url("./Avto_Servisis_Avtomatizaciis_Sistema/Untitled design.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 3rem 0 ;
     .container-action{
-        .action-h1{
+
+        h1{
+            color: white;
+
             font-size: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
         }
-        .container-action-child{
+        .container-action__child-container{
+  
             padding: 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 3rem;
             flex-wrap: wrap;
+            h2{
+                color: white;
+            }
             .actionn{
+
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -28,8 +41,8 @@
                     align-items: center;
                 }
                 
-                .container-action-child-child{
-
+                .container-action__child-container-child{
+                    
                     display: flex;
                 align-items: center;
                 justify-content: center;
@@ -37,9 +50,10 @@
                 justify-content: center;
                 border-radius: 50%;
                 cursor: pointer;
-                background-color: $background-color_12;
                 transition: 0.3s ease-in-out;
                     object-fit: cover;
+                    background-color: #3a7d5ab7; 
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
                    
                 img{
                     width: 100%;
@@ -49,7 +63,8 @@
                     translate: 0 -1vw;
                 }
             }
-            .container-action-child-child1{
+            .container-action__child-container-child1{
+                
                 font-size: clamp(0.5rem,0.7vw,1000px);
                 position: absolute;
                 top: 105%;

@@ -6,21 +6,21 @@
 }
 
 
-.section6{
+.section-about{
     
     .use-cases-container{
             #one{
                 display: none;
                 &:checked{
                     ~ .cases-container{
-                        .use-cases-child1{
+                        .cases-label{
                             .one{
                                 background-color: $background-color_13;
                                 color: white;
                             }
                         }
-                        .use-cases-child2{
-                           .preview{
+                        .use-case-content{
+                           .preview__image{
                             border-radius: 5px;
                             background-image: url(./Avto_Servisis_Avtomatizaciis_Sistema/28.png);
                             height: clamp(12rem,15vw,1000px);
@@ -28,7 +28,11 @@
                             background-size:contain;
                             background-position:center;
                            }
-                      
+                           .preview__text--first{}
+                           .preview__text--second{
+                            display: none;
+                           }
+                           .preview__text--third{display: none;}
                         }
                     }
                 }
@@ -37,22 +41,24 @@
                 display: none;
                 &:checked{
                     ~ .cases-container{
-                        .use-cases-child1{
+                        .cases-label{
                             .two{
                                 background-color: $background-color_13;
 
                                 color: white;
                             }
                         }
-                        .use-cases-child2{
-                          .preview{
+                        .use-case-content{
+                          .preview__image{
                             height: clamp(12rem,15vw,1000px);
                          background-image: url(./Avto_Servisis_Avtomatizaciis_Sistema/career.jpg);
                          background-repeat:no-repeat;
                          background-size:contain;
                          background-position:center;
                           }
-                      
+                          .preview__text--first{display: none;}
+                          .preview__text--second{}
+                          .preview__text--third{display: none;}
                         }
                     }
                 }
@@ -61,21 +67,23 @@
                 display: none;
                 &:checked{
                     ~ .cases-container{
-                        .use-cases-child1{
+                        .cases-label{
                             .three{
                                 background-color: $background-color_13;
                                 color: white;
                             }
                         }
-                        .use-cases-child2{
-                          .preview{
+                        .use-case-content{
+                          .preview__image{
                             height: clamp(12rem,15vw,1000px);
                          background-image: url(./Avto_Servisis_Avtomatizaciis_Sistema/ბანერი.jpg);
                          background-repeat:no-repeat;
                          background-size:contain;
                          background-position:center;
                           }
-                      
+                          .preview__text--first{display: none;}
+                          .preview__text--second{display: none;}
+                          .preview__text--third{}
                         }
                     }
                 }
@@ -89,7 +97,9 @@
             margin: 2vw;
         }
         
-        .use-cases-child1{
+
+
+        .cases-label{
             margin-bottom: 2vw;
             width: 100%;
             display: flex;
@@ -118,15 +128,16 @@
                 
             }
         }
+        
         .cases-container{
             background-color: $background-color_2;
             border-radius: 3px;
             padding: 2vw; 
             width: 100%;
-        .use-cases-child2{
+        .use-case-content{
             display: flex;
             flex-wrap: wrap;
-            .preview{
+            .preview__image{
                 width: 50%;
                 @include flexcenter();
                 img{
@@ -134,7 +145,7 @@
                      height: auto;
                 }
             }
-            .preview2{
+            .preview__text{
                 display: flex;
                 flex-direction: column;
                 margin-top: 1.5vw;
@@ -151,9 +162,90 @@
                     font-size: clamp(0.8rem,1vw,1000px);
                 }
             }
+            .preview-more{
+                display: flex;
+                align-items: center;
+                width: 50%;
+                margin-left: auto;
+            }
         
         }
         
     }
+    
+          
+          .box {
+
+            width: 40%;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.2);
+            padding: 35px;
+            border: 2px solid #fff;
+            border-radius: 20px/50px;
+            background-clip: padding-box;
+            text-align: center;
+          }
+     
+      
+          .overlay {
+            z-index: 11;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+          }
+          .overlay:target {
+            visibility: visible;
+            opacity: 1;
+          }
+          
+          .popup {
+            padding: 2rem;
+            margin: auto;
+            background: #fff;
+            border-radius: 5px;
+            min-width: fit-content;
+            position: relative;
+            font-size: 13px;
+          }
+          
+          .popup h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #333;
+          }
+          .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+          }
+          .popup .close:hover {
+            color: #06D85F;
+          }
+          .popup .content {
+            max-height: 30%;
+            overflow: auto;
+          }
+          
+         
+
+
+
+
+
+
+
+
+
 }
 }
