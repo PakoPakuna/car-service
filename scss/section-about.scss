@@ -198,6 +198,7 @@
             transition: opacity 500ms;
             visibility: hidden;
             opacity: 0;
+            
           }
           .overlay:target {
             visibility: visible;
@@ -205,13 +206,17 @@
           }
           
           .popup {
-            padding: 2rem;
-            margin: auto;
-            background: #fff;
-            border-radius: 5px;
-            min-width: fit-content;
-            position: relative;
-            font-size: 13px;
+            height: 400%; //sus
+
+              padding: 2rem;
+              margin: auto;
+              background: #fff;
+              border-radius: 5px;
+              width: clamp(20rem,50vw,1000px);
+              position: relative;
+              font-size: 13px;
+            
+
           }
           
           .popup h2 {
@@ -235,6 +240,7 @@
           .popup .content {
             max-height: 30%;
             overflow: auto;
+
           }
           
          
